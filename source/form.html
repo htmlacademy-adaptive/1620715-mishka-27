@@ -16,7 +16,7 @@
           <a class="page-header__logo" href="index.html">
             <img
               class="page-header__logo-image"
-              src="../source/img/mishka-logo-mobile.svg"
+              src=".//img/mishka-logo-mobile.svg"
               width="86"
               height="35"
               alt="Логотип сайта."
@@ -48,8 +48,10 @@
     </header>
 
     <main>
+      <section class="intro">
+        <h1 class="intro__tittle">Вязание на заказ</h1>
+      </section>
       <section class="knitting">
-        <h1 class="knitting__tittle">Вязание на заказ</h1>
         <p class="knitting__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
           формузаказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -238,44 +240,43 @@
           </fieldset>
 
           <fieldset class="form-group form-group--contacts">
+
+            <legend class="form-group__title">Тел</legend>
             <label
               class="form-group__title form-group__title--contacts"
-              for="number"
             >
-              Тел
-            </label>
             <input
               class="form-group__input form-group__input--contacts"
               type="tel"
               name="user-number"
               placeholder="+7 ХХХ ХХХ ХХ ХХ*"
               required
-              id="number"
             />
             <svg class="form-group__icon" width="25" height="24"></svg>
-            <label
-              class="form-group__title form-group__title--email"
-              for="mail"
-            >
-              E-mail
-            </label>
+          </label>
+
+
+
+            <legend class="form-group__title">E-mail</legend>
+            <label class="form-group__title form-group__title--email">
             <input
               class="form-group__input form-group__input--contacts"
               type="email"
               name="user-mail"
               placeholder="Ваш Email*"
               required
-              id="mail"
             />
             <svg
               class="form-group__icon form-group__icon--mail"
               width="32"
               height="21"
             ></svg>
+            </label>>
           </fieldset>
 
           <fieldset class="form-group form-group--more">
-            <label class="form-group__title" for="more">Доп</label>
+            <legend class="form-group__title">Доп</legend>
+            <label class="form-group__title" for="more">
 
             <textarea
               class="form-group__textarea"
@@ -283,8 +284,8 @@
               cols="30"
               rows="5"
               placeholder="Опишите все ваши пожелания к заказу"
-              id="more"
-            ></textarea>
+              id="more"></textarea>
+          </label>
           </fieldset>
 
           <div class="form__container">
@@ -300,39 +301,33 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__inner">
-          <div class="page-footer__logo-wrapper">
             <a class="page-footer__logo" href="#">
               <svg class="page-footer__icon" width="102" height="34"></svg>
             </a>
-          </div>
-          <ul class="page-footer__list socials">
-            <li class="socials__item">
-              <a class="socials__link" href="#">
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте.</span>
-                <svg class="socials__icon" width="27" height="17"></svg>
+                <svg class="social__icon" width="27" height="17"></svg>
               </a>
             </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="#">
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube.</span>
-                <svg class="socials__icon" width="24" height="19"></svg>
+                <svg class="social__icon" width="24" height="19"></svg>
               </a>
             </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="#">
+            <li class="social__item">
+              <a class="social__link" href="tg://https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram.</span>
-                <svg class="socials__icon" width="20" height="17"></svg>
+                <svg class="social__icon" width="20" height="17"></svg>
               </a>
             </li>
           </ul>
-          <div class="page-footer__developed developed">
-            <a class="developed__link" href="https://htmlacademy.ru/study">
-              <span class="developed__text">Разработано</span>
-              <svg class="developed__icon" width="27" height="34"></svg>
+            <a class="page-footer__developed" href="https://htmlacademy.ru/study">
+              <span class="page-footer__developed-text">Разработано</span>
+              <svg class="page-footer__developed-icon" width="27" height="34"></svg>
             </a>
-          </div>
         </div>
       </div>
     </footer>
