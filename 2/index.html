@@ -15,7 +15,7 @@
           <a class="header-nav__logo" href="#">
             <img
               class="header-nav__logo-image"
-              src="../source/img/mishka-logo-mobile.svg"
+              src=".//img/mishka-logo-mobile.svg"
               width="86"
               height="35"
               alt="Логотип сайта."
@@ -40,6 +40,19 @@
             </a>
             <span class="">Корзина:пока пуста</span>
           </div>
+          <ul class="header-nav__promo-list">
+            <li class="header-nav__promo-item header-nav__promo-item--delivery">
+              <a class="header-nav__promo-link header-nav__promo-link--delivery" href="#">Бесплатная доставка по России</a>
+            </li>
+
+            <li class="header-nav__promo-item header-nav__promo-item--new">
+              <a class="header-nav__promo-link header-nav__promo-link--new" href="#">Новые поступления</a>
+            </li>
+
+            <li class="header-nav__promo-item header-nav__promo-item--sell">
+              <a class="header-nav__promo-link header-nav__promo-link--sell" href="#">Распродажа</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -48,17 +61,6 @@
       <h1 class="vissually-hidden">
         Сайт магазина товаров ручной работы Mishka.
       </h1>
-      <div class="main__navigation">
-        <ul class="main__navigation-list">
-          <li class="main__navigation-item">
-            <a class="new-arrivals" href="#">Новые пуступления</a>
-          </li>
-          <li class="main__navigation-item">
-            <a class="sale" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <div class="main__advantages">Бесплатная доставка по России</div>
-      </div>
       <section class="categories">
         <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
         <ul class="categories__list">
@@ -76,44 +78,40 @@
       </section>
       <section class="stock">
         <h2 class="stock__title">Вязаные корзинки</h2>
-        <span class="stock__product">Товар дня</span>
+        <span class="stock__product">Товар недели</span>
         <p class="stock__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках
           и трех размерах.
         </p>
-        <table class="special__table special-table">
-          <tbody>
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">
-                Цвет:
-              </td>
-              <td class="special-table__cell special-table__cell--value">
-                «Тиффани»/серый
-              </td>
-            </tr>
-
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">
-                Диаметр:
-              </td>
-              <td class="special-table__cell special-table__cell--value">
-                25 см
-              </td>
-            </tr>
-
-            <tr class="special-table__row">
-              <td class="special-table__cell special-table__cell--name">
-                Высота:
-              </td>
-              <td class="special-table__cell special-table__cell--value">
-                15 см
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <dl class="stock__table">
+          <div class="stock__table-item">
+            <dt class="stock__table-term">
+              Цвет:
+            </dt>
+            <dd class="stock__table-definition">
+              тиффани/серый
+            </dd>
+          </div>
+          <div class="stock__table-item">
+            <dt class="stock__table-term">
+              Диаметр:
+            </dt>
+            <dd class="stock__table-definition">
+              25 см
+            </dd>
+          </div>
+          <div class="stock__table-item">
+            <dt class="stock__table-term">
+              Высота:
+            </dt>
+            <dd class="stock__table-definition">
+              15 см
+            </dd>
+          </div>
+        </dl>
           <img
             class="ctock-image"
-            src="../source/img/triple-set-images.jpg"
+            src=".//img/triple-set-images.jpg"
             width="260"
             height="315"
             alt="Три вязанные корзиночки."
@@ -128,82 +126,71 @@
         <h2 class="features__tittle">Коротко о нас:</h2>
         <ul class="features__list">
           <li class="features__item features__item--ecology">
-            <p class="features__description">
               Экологически<br />чистые материалы
-            </p>
           </li>
           <li class="features__item features__item--prise">
-            <p class="features__description">
               Скандинавский стиль<br />по российской цене
-            </p>
           </li>
           <li class="features__item features__item--like">
-            <p class="features__description">
               Увеличивает лайки<br />на фотографиях
-            </p>
           </li>
           <li class="features__item features__item--natural">
-            <p class="features__description">
               Связано вручную<br />с любовью и умилением
-            </p>
           </li>
           <li class="features__item features__item--support">
-            <p class="features__description">
               Поддержка отечественного<br />производителя
-            </p>
           </li>
           <li class="features__item features__item--package">
-            <p class="features__description">
               Поставляется<br />в подарочной упаковке
-            </p>
           </li>
         </ul>
       </section>
 
       <div class="rewiews">
-        <h2 class="reviews__tittle">Отзывы</h2>
+        <h2 class="rewiews__tittle">Отзывы</h2>
         <blockquote class="rewiews__item">
-          <p class="reviews__comment">
+          <p class="rewiews__comment">
             Я молодая мама, но все равно фотографии не набирали и близко такого
             количества лайков, как у популярных инстамамочек. В отчаянии, я
             накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
             более стильными, а также набирают больше лайков!
           </p>
-          <h3 class="reviews__author">Анастасия Красильникова</h3>
-          <a class="reviews__nickname" href="#">@misssssiskras</a>
+          <h3 class="rewiews__author">Анастасия Красильникова</h3>
+          <span class="rewiews__nickname" href="#">@misssssiskras</span>
         </blockquote>
-        <div class="reviews__toggles">
+        <div class="rewiews__toggles">
           <button
-            class="reviews__toggle reviews__toggle--previous"
+            class="rewiews__toggle rewiews__toggle--previous"
             type="button"
           >
             <span class="visually-hidden">Предыдущий отзыв.</span>
           </button>
-          <button class="reviews__toggle reviews__toggle--next" type="button">
+          <button class="rewiews__toggle rewiews__toggle--next" type="button">
             <span class="visually-hidden">Следующий отзыв.</span>
           </button>
         </div>
-        <a class="reviews__button button" href="#">Написать</a>
+        <a class="rewiews__button button" href="#">Написать</a>
       </div>
 
       <section class="contacts">
         <div class="contacts__inner">
           <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__email">
-            <span>e-mail:</span
+          <div class="contacts__container">
+            <h3 class="contacts__email">e-mail:</h3
             ><a
               class="contacts__email-link"
               href="mailto:info@mimimishkashop.ru"
               >info@mimimishkashop.ru</a
             >
-          </p>
-          <p class="contacts__address">
-            <span>адрес:</span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </p>
+          </div>
+          <div class="contacts__container">
+            <h3 class="contacts__address">адрес:</h3>
+            <p class="contacts__address-street"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101 </p>
+          </div>
           <div class="contacts__map-wrapper">
             <img
               class="contacts__map-image"
-              src="../source/img/map-mobile.jpg"
+              src=".//img/map-mobile.jpg"
               width="320"
               height="455"
               alt="Наше расположение на карте."
@@ -219,52 +206,46 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__inner">
-          <div class="page-footer__logo-wrapper">
             <a class="page-footer__logo" href="#">
               <svg class="page-footer__icon" width="102" height="34"></svg>
             </a>
-          </div>
-          <ul class="page-footer__list socials">
-            <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy">
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте.</span>
-                <svg class="socials__icon" width="27" height="17"></svg>
+                <svg class="social__icon" width="27" height="17"></svg>
               </a>
             </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube.</span>
-                <svg class="socials__icon" width="24" height="19"></svg>
+                <svg class="social__icon" width="24" height="19"></svg>
               </a>
             </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="tg://https://t.me/htmlacademy">
+            <li class="social__item">
+              <a class="social__link" href="tg://https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram.</span>
-                <svg class="socials__icon" width="20" height="17"></svg>
+                <svg class="social__icon" width="20" height="17"></svg>
               </a>
             </li>
           </ul>
-          <div class="page-footer__developed developed">
-            <a class="developed__link" href="https://htmlacademy.ru/study">
-              <span class="developed__text">Разработано</span>
-              <svg class="developed__icon" width="27" height="34"></svg>
+            <a class="page-footer__developed" href="https://htmlacademy.ru/study">
+              <span class="page-footer__developed-text">Разработано</span>
+              <svg class="page-footer__developed-icon" width="27" height="34"></svg>
             </a>
-          </div>
         </div>
       </div>
     </footer>
+
+
     <div class="modal-container modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form
         class="modal__form"
         action="https://echo.htmlacademy.ru"
-        method="GET"
-      >
+        method="GET">
         <fieldset class="modal__form-group">
           <legend class="modal__legend">Выберите размер:</legend>
-
           <ul class="modal__list">
             <li class="modal__item">
               <label class="modal__label">
@@ -278,33 +259,30 @@
                 S
               </label>
             </li>
-
             <li class="modal__item">
               <label class="modal__label">
                 <input
                   class="modal__input"
                   type="radio"
                   name="size"
-                  value="S"
+                  value="M"
                 />
                 M
               </label>
             </li>
-
             <li class="modal__item">
               <label class="modal__label">
                 <input
                   class="modal__input"
                   type="radio"
                   name="size"
-                  value="S"
+                  value="L"
                 />
                 L
               </label>
             </li>
           </ul>
         </fieldset>
-
         <button class="modal__submit button" type="submit">Добавить</button>
       </form>
     </div>
