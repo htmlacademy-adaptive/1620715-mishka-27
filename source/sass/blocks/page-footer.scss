@@ -1,0 +1,33 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: $color-white-smoke;
+}
+
+.page-footer__developed-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 25px 60px 25px 60px;
+
+  list-style: none;
+
+  border-bottom: 1px solid $color-whisper-mod;
+}
+
+.page-footer__developed {
+  padding: 0 123px 32px 69px;
+
+  color: $color-default-black;
+  text-decoration: none;
+}
