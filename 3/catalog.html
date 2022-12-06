@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <base href="https://htmlacademy-adaptive.github.io/1620715-mishka-27/3/">
+</head>
+  <body>
+    <header class="page-header header">
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="header-nav__wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img
+              class="page-header__logo-image"
+              src="./img/mishka-logo-mobile.svg"
+              width="86"
+              height="35"
+              alt="Логотип сайта."
+            />
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="catalog.html"
+                >Каталог товаров</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <div class="header-nav-list user-list">
+            <a class="user-list__search" href="#">
+              <span class="visually-hidden">Кнопка поиска.</span>
+              <svg class="user-list__search-icon"></svg>
+            </a>
+            <a class="user-list__basket" href="#">
+              <span class="visually-hidden">Корзина.</span>
+              <svg class="user-list__basket-icon"></svg>
+            </a>
+            <span class="">Корзина:пока пуста</span>
+          </div>
+          <ul class="header-nav__promo-list">
+            <li class="header-nav__promo-item header-nav__promo-item--delivery">
+              <a class="header-nav__promo-link header-nav__promo-link--delivery" href="#">Бесплатная доставка по России</a>
+            </li>
+
+            <li class="header-nav__promo-item header-nav__promo-item--new">
+              <a class="header-nav__promo-link header-nav__promo-link--new" href="#">Новые поступления</a>
+            </li>
+
+            <li class="header-nav__promo-item header-nav__promo-item--sell">
+              <a class="header-nav__promo-link header-nav__promo-link--sell" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1 class="intro__title">
+          Каталог товаров
+        </h1>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">
+          Список товаров.
+        </h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img
+                class="catalog-item__link-image"
+                src="./img/img-bunny-mobile.jpg"
+                width="260"
+                height="195"
+                alt="Вязанная игрушка в виде зайчика."
+              />
+            </a>
+            <div class="catalog-item__info">
+                <a class="catalog-item__link" href="#"> <h3 class="catalog-item__title"> Зайчик-попрыгайчик </h3> </a>
+              <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="catalog-item__footer">
+              <span class="catalog-item__price">1 200 руб.</span>
+              <button class="catalog-item__button button" type="submit">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link " href="#">
+              <img
+                class="catalog-item__link-image"
+                src="./img/small-basket.jpg"
+                width="260"
+                height="195"
+                alt="Вязанная корзинка со сложенными полотенцами."
+              />
+            </a>
+            <div class="catalog-item__info">
+                <a class="catalog-item__link" href="#"> <h3 class="catalog-item__title"> Корзинка для белья </h3> </a>
+              <p class="catalog-item__description">
+                Диаметр 15 см, высота 10 см
+              </p>
+            </div>
+            <div class="catalog-item__footer">
+              <span class="catalog-item__price">690 руб.</span>
+              <button class="catalog-item__button button" type="submit">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img
+                class="catalog-item__image"
+                src="./img/big-basket.jpg"
+                width="260"
+                height="195"
+                alt="Вязанная корзинка с игрушками."
+              />
+            </a>
+            <div class="catalog-item__info">
+                <a class="catalog-item__link" href="#">
+                  <h3 class="catalog-item__title">
+                  Большая корзинка для игрушек
+              </h3>>
+                </a>
+              <p class="catalog-item__description">
+                Диаметр 30 см, высота 30 см
+              </p>
+            </div>
+            <div class="catalog-item__footer">
+              <span class="catalog-item__price">1500 руб.</span>
+              <button class="catalog-item__button button" type="submit">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="manufacturing">
+        <div class="manufacturing__inner">
+          <h2 class="manufacturing__title">Процесс производства</h2>
+          <div class="manufacturing__player-container">
+            <img
+              src="./img/video-mobile.jpg"
+              width="260"
+              height="150"
+              alt="Воспроизвести видео."
+            />
+            <button class="manufacturing__player-button">
+              <img src="./img/play.svg" alt="Воспроизвести видео." />
+            </button>
+          </div>
+          <p class="manufacturing__descriprion">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.
+          </p>
+          <a class="manufacturing__button button" href="#">
+            Сделать заказ
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__inner">
+            <a class="page-footer__logo" href="#">
+              <svg class="page-footer__icon" width="102" height="34"></svg>
+            </a>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg class="social__icon" width="27" height="17"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">YouTube.</span>
+                <svg class="social__icon" width="24" height="19"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="tg://https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram.</span>
+                <svg class="social__icon" width="20" height="17"></svg>
+              </a>
+            </li>
+          </ul>
+            <a class="page-footer__developed" href="https://htmlacademy.ru/study">
+              <span class="page-footer__developed-text">Разработано</span>
+              <svg class="page-footer__developed-icon" width="27" height="34"></svg>
+            </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-container modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form
+        class="modal__form"
+        action="https://echo.htmlacademy.ru"
+        method="GET"
+      >
+        <fieldset class="modal__form-group">
+          <legend class="modal__legend">Выберите размер:</legend>
+
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__label">
+                <input
+                  class="modal__input"
+                  type="radio"
+                  name="size"
+                  value="S"
+                  checked
+                />
+                S
+              </label>
+            </li>
+
+            <li class="modal__item">
+              <label class="modal__label">
+                <input
+                  class="modal__input"
+                  type="radio"
+                  name="size"
+                  value="M"
+                />
+                M
+              </label>
+            </li>
+
+            <li class="modal__item">
+              <label class="modal__label">
+                <input
+                  class="modal__input"
+                  type="radio"
+                  name="size"
+                  value="S"
+                />
+                L
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="modal__submit button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </body>
+</html>
