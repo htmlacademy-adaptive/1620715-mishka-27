@@ -6,3 +6,53 @@
 
   background-color: $color-default-white;
 }
+
+.header-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-nav__item {
+  height: 78px;
+
+  border-bottom: 1px solid $color-whisper;
+}
+
+.header-nav__link {
+  display: block;
+  padding: 27px 33px 27px 76px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-default-black;
+  text-decoration: none;
+}
+
+.header-nav__promo-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-nav__promo-link {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: inherit;
+  color: $color-default-black;
+  text-decoration: none;
+}
+
+.header-nav__promo-link--delivery {
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.header-nav__promo-link--new,
+.header-nav__promo-link--sell {
+  font-weight: 700;
+}

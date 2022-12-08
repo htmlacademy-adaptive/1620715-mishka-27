@@ -26,8 +26,13 @@
 }
 
 .page-footer__developed {
-  padding: 0 123px 32px 69px;
+  display: block;
+  padding: 0 103px 0 49px;
 
   color: $color-default-black;
   text-decoration: none;
+}
+
+.page-footer__developed-text {
+  display: block;
 }

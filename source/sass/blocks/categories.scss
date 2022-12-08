@@ -5,6 +5,13 @@
   margin: 0 auto;
 }
 
+.categories__container {
+  background-color: $color-default-white;
+  background-image: url("../../img/index-categories-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .categories__title {
   margin: 0;
   padding: 73px 30px 120px 30px;
@@ -18,6 +25,7 @@
 
 .categories__list {
   margin: 0;
+  margin-bottom: 31px;
   padding: 0;
 
   list-style: none;
