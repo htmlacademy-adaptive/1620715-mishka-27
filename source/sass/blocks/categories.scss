@@ -1,0 +1,54 @@
+.categories {
+  position: relative;
+
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.categories__container {
+  background-color: $color-default-white;
+  background-image: url("../../img/index-categories-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categories__title {
+  margin: 0;
+  padding: 73px 30px 120px 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.categories__list {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.categories__link {
+  display: block;
+  min-width: 320px;
+  height: 103px;
+  padding: 24px 160px 31px 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-default-white;
+  text-decoration: none;
+}
+
+.categories__link--interior {
+  background-color: $color-downy;
+}
+
+.categories__link--toy {
+  background-color: $color-ruerto-rico;
+}

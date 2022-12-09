@@ -1,0 +1,56 @@
+.rewiews__tittle {
+  margin: 0 0 14px 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.rewiews__comment {
+  margin: 0 0 33px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.rewiews__author {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.rewiews__nickname {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.rewiews__toggles {
+  display: flex;
+  margin: 0 0 38px 0;
+}
+
+.rewiews__toggle-button {
+  width: 50%;
+  height: 52px;
+  padding: 0;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-whisper;
+}
+
+.rewiews__item {
+  margin: 0 0 31px 0;
+}
+
+.rewiews__button {
+  margin: 0 0 89px 0;
+}

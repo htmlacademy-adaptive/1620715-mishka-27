@@ -1,0 +1,91 @@
+.form-group {
+  border: none;
+}
+
+.form-group__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-downy;
+}
+
+.form-group__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form-group__input {
+  border: none;
+  &--radio {
+    margin-bottom: 24px;
+  }
+  &--checkbox {
+    margin-bottom: 43px;
+  }
+}
+
+.form-group__title--type {
+  margin-bottom: 35px;
+}
+
+.form-group__title--color {
+  margin-bottom: 35px;
+}
+
+.form-group__title--about {
+  margin-bottom: 29px;
+}
+
+.form-group__title--contacts {
+  margin-bottom: 19px;
+}
+
+.form-group__title--email {
+  margin-bottom: 21px;
+}
+
+.form-group__title--additionally {
+  margin-bottom: 23px;
+}
+
+.form-group__textarea {
+  margin-bottom: 17px;
+  padding: 15px 15px 26px;
+
+  border: 2px solid  $color-charcoal;
+}
+
+.form-group__input--about {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 2px solid $color-default-black;
+}
+
+.form__mark {
+  display: block;
+  margin-bottom: 30px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__submit {
+  margin-bottom: 55px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+}

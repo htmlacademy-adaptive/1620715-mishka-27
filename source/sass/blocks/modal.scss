@@ -1,0 +1,54 @@
+.modal {
+  position: fixed;
+  top: 50%;
+
+  padding-top: 29px;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-silver;
+  box-shadow: 0 5px 10px $solor-dark-green;
+}
+
+.modal__close {
+  display: none;
+}
+
+.modal__title {
+  margin: 0 0 14px 0;
+  padding: 0 50px 0 54px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal__form-group {
+  border: none;
+}
+
+.modal__legend {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.modal__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal__submit {
+  margin-bottom: 46px;
+
+  color: $color-default-white;
+
+  background-color: $color-downy;
+  border: none;
+  outline: none;
+}
