@@ -1,15 +1,37 @@
 .categories {
   position: relative;
 
-  max-width: 320px;
-  margin: 0 auto;
+  width: 100%;
+
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .categories__container {
   background-color: $color-default-white;
-  background-image: url("../../img/index-categories-background.jpg");
+  background-image: url("../img/index-categories-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 135px;
+
+    background-image: url("../img/hero-tablet.jpg");
+    background-position: 50% -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 135px;
+
+    background-image: url("../../img/hero-desktop.jpg");
+    background-position: 50% -60px;
+  }
 }
 
 .categories__title {
@@ -21,6 +43,16 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .categories__list {
@@ -29,6 +61,16 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.categories__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .categories__link {
@@ -43,6 +85,11 @@
   line-height: 24px;
   color: $color-default-white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .categories__link--interior {

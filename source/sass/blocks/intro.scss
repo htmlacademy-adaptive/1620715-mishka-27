@@ -5,11 +5,27 @@
 }
 
 .intro__tittle {
+  display: block;
+  height: 177px;
   margin: 0;
-  padding: 74px 22px;
+  padding: 74px 21px;
 
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+
+  background-color: $color-snow;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

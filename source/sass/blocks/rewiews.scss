@@ -5,6 +5,16 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .rewiews__comment {
@@ -14,6 +24,15 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-row-start: 2;
+  }
 }
 
 .rewiews__author {
@@ -23,6 +42,14 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .rewiews__nickname {
@@ -35,6 +62,7 @@
 
 .rewiews__toggles {
   display: flex;
+  max-width: 260px;
   margin: 0 0 38px 0;
 }
 
@@ -45,6 +73,10 @@
 
   background-color: $color-default-white;
   border: 1px solid $color-whisper;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .rewiews__item {
@@ -53,4 +85,58 @@
 
 .rewiews__button {
   margin: 0 0 89px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    font-size: 17px;
+  }
+}
+
+.rewiews {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/review.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
+}
+
+// если можно будет этот метод оставить, то перепишу на нормальные обозначения
+.rewiews__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "rt rb"
+    "rc rc"
+    "ri rtg";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25%;
+  }
+}
+
+.rewiews__tittle {
+  grid-area: rt;
+}
+
+.rewiews__button {
+  grid-area: rb;
+}
+
+.rewiews__comment {
+  grid-area: rc;
+}
+
+.rewiews__item {
+  grid-area: ri;
+}
+
+.rewiews__toggles {
+  grid-area: rtg;
 }
