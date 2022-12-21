@@ -95,13 +95,14 @@
 
 .contacts__wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: column;
     max-width: 300px;
   }

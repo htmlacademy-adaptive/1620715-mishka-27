@@ -82,7 +82,6 @@
 
 .categories__link {
   display: block;
-  max-width: 320px;
   height: 103px;
   padding: 24px 160px 31px 30px;
 
@@ -96,6 +95,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    max-width: 668px;
   }
 }
 
