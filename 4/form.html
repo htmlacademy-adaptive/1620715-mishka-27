@@ -62,18 +62,22 @@
     </header>
 
     <main>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2 class="intro__tittle">Вязание на заказ</h2>
+        </div>
+      </section>
       <section class="knitting">
-        <h2 class="knitting__tittle intro__tittle">Вязание на заказ</h2>
         <p class="knitting__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-          формузаказа и мы свяжемся с вами, чтобы уточнить детали.
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <div class="kniting__form-wrapper">
-          <form
-            class="knitting__form form"
-            action="https://echo.htmlacademy.ru/"
-            method="GET"
-          >
+        <form
+          class="knitting__form form"
+          action="https://echo.htmlacademy.ru/"
+          method="GET"
+        >
+          <div class="form__container">
             <fieldset class="form-group form-group--type">
               <legend class="form-group__title form-group__title--type">
                 Тип
@@ -104,106 +108,113 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-group form__group-wrapper form-group--grey">
-              <legend class="form-group__title form-group__title--color">
-                Цвет
-              </legend>
-              <ul class="form__list form__list--has-wrapper">
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="white"
-                    id="white"
-                    checked
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="white"
-                  >
-                    Белый
-                  </label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="grey"
-                    id="grey"
-                    checked
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="grey"
-                  >
-                    Серый
-                  </label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="tiffany"
-                    id="tiffany"
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="tiffany"
-                  >
-                    «Тиффани»
-                  </label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="black"
-                    id="black"
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="black"
-                  >
-                    Черный
-                  </label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="pink"
-                    id="pink"
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="pink"
-                  >
-                    Розовый
-                  </label>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input
-                    class="form-group__input form-group__input--checkbox"
-                    type="checkbox"
-                    name="color"
-                    value="orange"
-                    id="orange"
-                  />
-                  <label
-                    class="form-group__label form-group__label--checkbox"
-                    for="orange"
-                  >
-                    Оранжевый
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+          </div>
 
+          <div class="form__container--color">
+            <div class="form__container">
+              <fieldset class="form-group form__group-wrapper form-group--grey">
+                <legend class="form-group__title form-group__title--color">
+                  Цвет
+                </legend>
+                <ul class="form__list form__list--has-wrapper">
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="white"
+                      id="white"
+                      checked
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="white"
+                    >
+                      Белый
+                    </label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="grey"
+                      id="grey"
+                      checked
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="grey"
+                    >
+                      Серый
+                    </label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="tiffany"
+                      id="tiffany"
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="tiffany"
+                    >
+                      Тиффани
+                    </label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="black"
+                      id="black"
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="black"
+                    >
+                      Черный
+                    </label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="pink"
+                      id="pink"
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="pink"
+                    >
+                      Розовый
+                    </label>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input
+                      class="form-group__input form-group__input--checkbox visually-hidden"
+                      type="checkbox"
+                      name="color"
+                      value="orange"
+                      id="orange"
+                    />
+                    <label
+                      class="form-group__label form-group__label--checkbox"
+                      for="orange"
+                    >
+                      Оранжевый
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="form__container">
             <fieldset class="form-group form-group--about">
               <legend class="form-group__title form-group__title--about">
                 ФИО
@@ -253,30 +264,35 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
+          <div class="form__container--color">
+            <div class="form__container">
+              <fieldset class="form-group form-group--contacts">
+                <div class="form-group__container">
+                  <legend class="form-group__title">Тел</legend>
+                  <input
+                    class="form-group__input form-group__input--contacts"
+                    type="tel"
+                    name="user-number"
+                    placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                    required
+                  />
+                </div>
+                <div class="form-group__container">
+                  <legend class="form-group__title">E-mail</legend>
+                  <input
+                    class="form-group__input form-group__input--contacts"
+                    type="email"
+                    name="user-mail"
+                    placeholder="Ваш Email*"
+                    required
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
 
-            <fieldset class="form-group form-group--contacts">
-              <div class="form-group__container">
-                <legend class="form-group__title">Тел</legend>
-                <input
-                  class="form-group__input form-group__input--contacts"
-                  type="tel"
-                  name="user-number"
-                  placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                  required
-                />
-              </div>
-              <div class="form-group__container">
-                <legend class="form-group__title">E-mail</legend>
-                <input
-                  class="form-group__input form-group__input--contacts"
-                  type="email"
-                  name="user-mail"
-                  placeholder="Ваш Email*"
-                  required
-                />
-              </div>
-            </fieldset>
-
+          <div class="form__container">
             <fieldset class="form-group form-group--more">
               <legend class="form-group__title form-group__title--additionally">
                 Доп
@@ -292,15 +308,15 @@
                 ></textarea>
               </label>
             </fieldset>
+          </div>
 
-            <div class="form__container container">
-              <span class="form__mark">*Поля обязательны для заполнения</span>
-              <button class="form__submit button" type="submit">
-                Отправить заказ
-              </button>
-            </div>
-          </form>
-        </div>
+          <div class="form__submit">
+            <span class="form__mark">*Поля обязательны для заполнения</span>
+            <button class="form__submit-button button" type="submit">
+              Отправить заказ
+            </button>
+          </div>
+        </form>
       </section>
     </main>
 
