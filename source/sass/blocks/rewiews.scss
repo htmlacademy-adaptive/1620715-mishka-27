@@ -26,6 +26,8 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    max-width: 668px;
+
     font-size: 17px;
 
     grid-column-end: 4;
@@ -62,6 +64,7 @@
 
 .rewiews__toggles {
   display: flex;
+  min-width: 260px;
   max-width: 260px;
   margin: 0 0 38px 0;
 }
@@ -87,7 +90,7 @@
   margin: 0 0 89px 0;
 
   @media (min-width: $tablet-width) {
-    order: 2;
+    max-width: 175px;
 
     font-size: 17px;
   }
@@ -95,19 +98,32 @@
 
 .rewiews {
   @media (min-width: $tablet-width) {
+    max-width: 900px;
+    margin: 0 auto;
+
     background-image: url("../../img/review.jpg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    max-width: 1050px;
+    padding: 0 50px 0 175px;
   }
 }
 
 // если можно будет этот метод оставить, то перепишу на нормальные обозначения
 .rewiews__wrapper {
+  @media (min-width: $mobile-width) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+
+    column-gap: 313px;
 
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: "rt rb"
@@ -117,7 +133,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 25%;
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 

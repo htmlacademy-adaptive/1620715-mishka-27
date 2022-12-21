@@ -14,7 +14,7 @@
 
 .header__site-link {
   display: block;
-  padding: 29px;
+  padding: 29px 65px 27px 76px;
 
   font-style: normal;
   font-weight: 700;
@@ -25,6 +25,9 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+
     font-size: 15px;
   }
 
@@ -87,6 +90,7 @@
 
     text-align: end;
   }
+
   &--basket {
     @media (min-width: $desktop-width) {
       width: 60%;
@@ -134,7 +138,11 @@
   padding-top: 80px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
   }
 }
 
@@ -193,6 +201,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+
+    column-gap: 36px;
 
     &::before {
       content: "";
@@ -292,7 +302,7 @@
 .header__toggle-button {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 50px;
 
   @media (min-width: $tablet-width) {
     display: none;

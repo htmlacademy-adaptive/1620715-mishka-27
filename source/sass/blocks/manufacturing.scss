@@ -1,14 +1,27 @@
 .manufacturing {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .manufacturing__inner {
   position: relative;
 
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0 auto;
+
   border: 1px solid $color-whisper;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    max-width: 668px;
 
     grid-template-areas: "player-container"
     "tittle"
@@ -17,11 +30,12 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    max-width: 1050px;
     padding-bottom: 105px;
 
     grid-template-areas: "player-container tittle"
     "player-container manufacturing__order";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 65% 1fr;
   }
 }
 
@@ -58,7 +72,17 @@
 }
 
 .manufacturing__order {
-  padding: 13px 30px 32px;
+  padding: 13px 30px 34px;
+
+  grid-area: manufacturing__order;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 42px 46px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 36px 60px 80px;
+  }
 }
 
 .manufacturing__button {
@@ -70,17 +94,19 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    max-width: 584px;
+
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 230px;
   }
 }
 
 
 .manufacturing__player-container {
   grid-area: player-container;
-}
-
-.manufacturing__order {
-  grid-area: manufacturing__order;
 }
 
 .manufacturing__player-button {
@@ -91,7 +117,8 @@
   transform: translateX(-50%);
 
   @media (min-width: $desktop-width) {
-    left: 25%;
+    top: 205px;
+    left: 33%;
   }
 }
 

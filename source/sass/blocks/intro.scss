@@ -4,19 +4,29 @@
   background-color: $color-white-smoke;
 }
 
-.intro__tittle {
-  display: block;
-  height: 177px;
-  margin: 0;
-  padding: 74px 21px;
+.intro__wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 74px 0;
 
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin-bottom: 98px;
+  }
+}
+
+.intro__tittle {
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-
-  background-color: $color-snow;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;

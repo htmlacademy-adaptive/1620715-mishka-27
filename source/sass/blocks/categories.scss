@@ -3,7 +3,7 @@
 
   width: 100%;
 
-  background-color: #f2f2f2;
+  background-color: $color-snow;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -11,11 +11,11 @@
 }
 
 .categories__container {
-  background-color: $color-default-white;
+  background-color: $color-snow;
   background-image: url("../img/index-categories-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 320px 373px;
 
   @media (min-width: $tablet-width) {
     padding-top: 94px;
@@ -23,14 +23,17 @@
 
     background-image: url("../img/hero-tablet.jpg");
     background-position: 50% -60px;
+    background-size: 768px 746px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 94px;
     padding-bottom: 135px;
 
-    background-image: url("../../img/hero-desktop.jpg");
+    background-image: url("../img/hero-desktop.jpg");
     background-position: 50% -60px;
+    background-size: 1150px 746px;
+
   }
 }
 
@@ -56,7 +59,7 @@
 }
 
 .categories__list {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 31px;
   padding: 0;
 
@@ -64,6 +67,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
   }
 }
 
@@ -75,7 +82,7 @@
 
 .categories__link {
   display: block;
-  min-width: 320px;
+  max-width: 320px;
   height: 103px;
   padding: 24px 160px 31px 30px;
 

@@ -1,9 +1,8 @@
 .container {
   width: 100%;
-  margin: 0 30px;
-  padding: 0;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
+    padding: 0 50px;
   }
 }
