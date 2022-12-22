@@ -1,3 +1,13 @@
 .user-list__search {
   display: block;
 }
+
+.user-list__search-description {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__search-icon {
+  width: 82px;
+}

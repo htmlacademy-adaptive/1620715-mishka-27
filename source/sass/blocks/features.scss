@@ -5,6 +5,17 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .features__list {
@@ -12,6 +23,20 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $mobile-width) {
+    min-width: 260px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    max-width: 700px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .features__item {
@@ -21,7 +46,45 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
   &:last-child {
     margin-bottom: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--prise {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--natural {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--package {
+      order: 6;
+    }
+  }
+}
+
+
+.featutes__container {
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
