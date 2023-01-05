@@ -1,11 +1,11 @@
 .manufacturing {
   padding: 0 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     font-size: 50px;
   }
 }
@@ -19,7 +19,7 @@
 
   border: 1px solid $color-whisper;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: grid;
     max-width: 668px;
 
@@ -28,7 +28,7 @@
     "manufacturing__order";
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     display: grid;
     max-width: 1050px;
     padding-bottom: 105px;
@@ -50,8 +50,13 @@
 
   grid-area: tittle;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 20px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 96px;
+    padding-left: 60px;
   }
 }
 
@@ -65,7 +70,7 @@
   line-height: 24px;
   color: $color-charcoal;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 15px;
     line-height: 30px;
   }
@@ -76,11 +81,11 @@
 
   grid-area: manufacturing__order;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     padding: 0 42px 46px 42px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     padding: 47px 36px 60px 80px;
   }
 }
@@ -93,13 +98,13 @@
   font-size: 18px;
   line-height: 16px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     max-width: 584px;
 
     font-size: 17px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     max-width: 230px;
   }
 }
@@ -114,18 +119,39 @@
   top: 126px;
   left: 50%;
 
+  background-color: inherit;
+  border: none;
   transform: translateX(-50%);
 
-  @media (min-width: $desktop-width) {
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-1150) {
     top: 205px;
     left: 33%;
   }
 }
 
 .manufacturing__image {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: block;
     width: 100%;
     height: 100%;
+  }
+}
+
+.manufacturing__video {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  @media (min-width: $vp-768) {
+    top: 59%;
+  }
+
+  @media (min-width: $vp-1150) {
+    top: 5%;
+    left: 70%;
   }
 }

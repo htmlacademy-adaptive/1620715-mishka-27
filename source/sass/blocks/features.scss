@@ -5,14 +5,20 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-321) {
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 97px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -24,13 +30,13 @@
 
   list-style: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $vp-321) {
     min-width: 260px;
     max-width: 260px;
     margin: 0 auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: grid;
     max-width: 700px;
     margin: 0 auto;
@@ -40,6 +46,8 @@
 }
 
 .features__item {
+  position: relative;
+
   margin-bottom: 83px;
 
   font-style: normal;
@@ -47,11 +55,85 @@
   font-size: 17px;
   line-height: 20px;
 
+  &--ecology::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 7px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/ecology.svg");
+  }
+
+  &--prise::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/prise.svg");
+  }
+
+  &--like::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/like.svg");
+  }
+
+  &--natural::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/natural.svg");
+  }
+
+  &--support::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -7px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/support.svg");
+  }
+
+  &--package::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../../img/package.svg");
+  }
+
   &:last-child {
     margin-bottom: 58px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
+    margin-bottom: 110px;
+
     font-size: 20px;
     line-height: 22px;
 
@@ -83,8 +165,15 @@
 
 
 .featutes__container {
-  @media (min-width: $desktop-width) {
+  padding: 0 30px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp-1150) {
     max-width: 700px;
     margin: 0 auto;
+    padding: 0;
   }
 }

@@ -2,6 +2,25 @@
   margin-bottom: 17px;
 
   background-color: $color-white-smoke;
+
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 97%;
+
+      display: block;
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/zigzag-intro.svg");
+      background-position-x: center;
+      background-size: auto 22.8px;
+    }
+  }
 }
 
 .intro__wrapper {
@@ -10,12 +29,12 @@
   margin: 0 auto;
   padding: 74px 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     max-width: 768px;
     margin-bottom: 54px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     max-width: 1150px;
     margin-bottom: 98px;
   }
@@ -28,12 +47,12 @@
   line-height: 30px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
