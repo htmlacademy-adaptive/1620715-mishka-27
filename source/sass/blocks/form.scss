@@ -541,6 +541,7 @@
   position: absolute;
   top: 0;
   left: 215px;
+  pointer-events: none;
 
   @media (min-width: $vp-768) {
     top: 15px;

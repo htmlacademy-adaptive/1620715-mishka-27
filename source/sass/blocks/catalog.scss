@@ -106,14 +106,6 @@
 .catalog-item__link {
   color: $color-default-black;
   text-decoration: none;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .catalog-item__title {
@@ -158,25 +150,25 @@
 }
 
 .catalog-item__button {
+  opacity: 0.2;
   position: absolute;
   left: 90%;
+  cursor: pointer;
 
   background-color: inherit;
   border: none;
 
-  &:hover svg {
+  &:hover {
     opacity: 1;
-
     fill: $color-downy;
   }
 
-  &:focus svg {
+  &:focus {
     opacity: 1;
-
     fill: $color-downy;
   }
 
-  &:active svg {
+  &:active {
     opacity: 0.3;
   }
 }

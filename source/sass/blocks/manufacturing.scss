@@ -1,12 +1,15 @@
 .manufacturing {
   padding: 0 30px;
+  padding-bottom: 58px;
 
   @media (min-width: $vp-768) {
     font-size: 50px;
+    padding-bottom: 64px;
   }
 
   @media (min-width: $vp-1150) {
     font-size: 50px;
+    padding-bottom: 105px;
   }
 }
 
@@ -18,6 +21,14 @@
   margin: 0 auto;
 
   border: 1px solid $color-whisper;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
+  }
 
   @media (min-width: $vp-768) {
     display: grid;
@@ -31,7 +42,6 @@
   @media (min-width: $vp-1150) {
     display: grid;
     max-width: 1050px;
-    padding-bottom: 105px;
 
     grid-template-areas: "player-container tittle"
     "player-container manufacturing__order";
@@ -42,13 +52,26 @@
 .manufacturing__title {
   margin: 0;
   padding: 22px 13px 27px 91px;
-
+  position: relative;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
   grid-area: tittle;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/video.svg");
+    transform: translateY(-50%);
+  }
 
   @media (min-width: $vp-768) {
     font-size: 20px;
@@ -57,12 +80,20 @@
   @media (min-width: $vp-1150) {
     padding-top: 96px;
     padding-left: 60px;
+
+    &::before {
+      top: 30px;
+      left: 58px;
+
+      transform: translateY(0);
+    }
   }
+
 }
 
 .manufacturing__descriprion {
   margin: 0;
-  padding: 35px 0 41px 0;
+  padding: 0 0 41px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -86,7 +117,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 47px 36px 60px 80px;
+    padding: 0 36px 60px 80px;
   }
 }
 
@@ -112,24 +143,42 @@
 
 .manufacturing__player-container {
   grid-area: player-container;
+  position: relative;
 }
 
 .manufacturing__player-button {
   position: absolute;
-  top: 126px;
+  top: 50%;
   left: 50%;
+  padding: 0;
 
-  background-color: inherit;
+  width: 100px;
+  height: 77px;
+  background-color: transparent;
   border: none;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
 
-  &:active {
-    opacity: 0.3;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/play.svg");
+    transform: translateX(-50%) translateY(-50%);
   }
 
-  @media (min-width: $vp-1150) {
-    top: 205px;
-    left: 33%;
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.3;
   }
 }
 
