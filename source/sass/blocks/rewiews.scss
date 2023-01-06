@@ -77,10 +77,10 @@
   width: 50%;
   height: 52px;
   padding: 0;
-  cursor: pointer;
 
   background-color: $color-default-white;
   border: 1px solid $color-whisper;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;

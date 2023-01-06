@@ -380,6 +380,7 @@
 .form__item {
   @media (min-width: $vp-768) {
     margin-bottom: 50px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -394,6 +395,7 @@
     align-items: center;
     max-width: 501px;
     margin-bottom: 41px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -541,6 +543,7 @@
   position: absolute;
   top: 0;
   left: 215px;
+
   pointer-events: none;
 
   @media (min-width: $vp-768) {
