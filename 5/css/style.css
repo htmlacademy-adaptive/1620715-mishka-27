@@ -1519,9 +1519,9 @@ html {
   width: 50%;
   height: 52px;
   padding: 0;
-  cursor: pointer;
   background-color: #ffffff;
   border: 1px solid #ececec;
+  cursor: pointer;
 }
 .rewiews__toggle-button:hover {
   opacity: 0.6;
@@ -2749,14 +2749,14 @@ html {
 }
 @media (min-width: 768px) {
   .manufacturing {
-    font-size: 50px;
     padding-bottom: 64px;
+    font-size: 50px;
   }
 }
 @media (min-width: 1150px) {
   .manufacturing {
-    font-size: 50px;
     padding-bottom: 105px;
+    font-size: 50px;
   }
 }
 
@@ -2790,9 +2790,9 @@ html {
 }
 
 .manufacturing__title {
+  position: relative;
   margin: 0;
   padding: 22px 13px 27px 91px;
-  position: relative;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2877,17 +2877,17 @@ html {
 }
 
 .manufacturing__player-container {
-  grid-area: player-container;
   position: relative;
+  grid-area: player-container;
 }
 
 .manufacturing__player-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 0;
   width: 100px;
   height: 77px;
+  padding: 0;
   background-color: transparent;
   border: none;
   transform: translateX(-50%) translateY(-50%);
