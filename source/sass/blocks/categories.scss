@@ -5,8 +5,34 @@
 
   background-color: $color-snow;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     margin: 0 auto;
+  }
+}
+
+.categories__zig-zag {
+  @media (min-width: $vp-768) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 97%;
+
+      display: block;
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      background-position-x: center;
+      background-size: auto 22.8px;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    &::after {
+      height: 34px;
+
+      background-size: 1250px;
+    }
   }
 }
 
@@ -17,7 +43,7 @@
   background-position: center;
   background-size: 320px 373px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     padding-top: 94px;
     padding-bottom: 135px;
 
@@ -26,14 +52,13 @@
     background-size: 768px 746px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     padding-top: 94px;
     padding-bottom: 135px;
 
     background-image: url("../img/hero-desktop.jpg");
     background-position: 50% -60px;
     background-size: 1150px 746px;
-
   }
 }
 
@@ -47,12 +72,12 @@
   line-height: 30px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -65,17 +90,53 @@
 
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: flex;
-  }
+    max-width: 668px;
 
-  @media (min-width: $desktop-width) {
-    max-width: 1050px;
+    @media (min-width: $vp-1150) {
+      max-width: 1050px;
+      margin-bottom: 132px;
+    }
   }
 }
 
 .categories__item {
-  @media (min-width: $tablet-width) {
+  position: relative;
+
+  background-color: $color-downy;
+
+  &:nth-child(even) {
+    background-color: $color-puerto-rico;
+
+    & .categories__link:hover {
+      background-color: $color-puerto-rico-mod;
+      transform: translateY(-5px);
+    }
+
+    & .categories__link:hover::after {
+      opacity: 0.7;
+    }
+
+    & .categories__link:active::after {
+      opacity: 0.3;
+    }
+  }
+
+  & .categories__link:hover {
+    background-color: $color-downy-alter;
+    transform: translateY(-5px);
+  }
+
+  & .categories__link:hover::after {
+    opacity: 0.7;
+  }
+
+  & .categories__link:active::after {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
     width: 50%;
   }
 }
@@ -92,17 +153,36 @@
   color: $color-default-white;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
+  &--interior::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/interior.svg");
+    opacity: 0.5;
+  }
+
+  &--toy::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 27px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/toy.svg");
+    opacity: 0.5;
+  }
+
+  @media (min-width: $vp-768) {
+    max-width: 668px;
+
     font-size: 20px;
     line-height: 30px;
-    max-width: 668px;
   }
-}
-
-.categories__link--interior {
-  background-color: $color-downy;
-}
-
-.categories__link--toy {
-  background-color: $color-ruerto-rico;
 }
