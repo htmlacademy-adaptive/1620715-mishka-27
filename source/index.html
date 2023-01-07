@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
         <a class="header__logo" href="#">
-          <img
-            class="header__logo-image"
-            src="./img/mishka-logo-mobile.svg"
-            width="86"
-            height="35"
-            alt="Логотип сайта."
-          />
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-mishka-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="img/logo-mishka-tablet.svg" width="113" height="46">
+            <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
+          </picture>
         </a>
         <button class="header__toggle-button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -111,12 +113,14 @@
         </div>
 
         <div class="stock__image">
-          <img
-            src="./img/triple-set-images.jpg"
-            width="260"
-            height="315"
-            alt="Три вязанные корзиночки."
-          />
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-images-desktop@1x.webp 1x, img/triple-set-images-desktop@2x.webp 2x" width="525" height="636">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-images-tablet@1x.webp 1x, img/triple-set-images-tablet@2x.webp 2x" width="334" height="404">
+            <source type="image/webp" srcset="img/triple-set-images-mobile@1x.webp 1x, img/triple-set-images-mobile@2x.webp 2x" width="260" height="315">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-images-desktop@1x.jpg 1x, img/triple-set-images-desktop@2x.jpg 2x" width="525" height="636">
+            <source media="(min-width: 768px)" srcset="img/triple-set-images-tablet@1x.jpg 1x, img/triple-set-images-tablet@2x.jpg 2x" width="334" height="404">
+            <img class="product__picture" src="img/triple-set-images-mobile@1x.jpg" srcset="img/triple-set-images-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки.">
+          </picture>
         </div>
         <div class="stock__container-price">
           <span class="stock__procuct-price">Цена:990 руб.</span>
