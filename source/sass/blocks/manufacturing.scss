@@ -1,11 +1,16 @@
 .manufacturing {
   padding: 0 30px;
+  padding-bottom: 58px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
+    padding-bottom: 64px;
+
     font-size: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
+    padding-bottom: 105px;
+
     font-size: 50px;
   }
 }
@@ -19,7 +24,15 @@
 
   border: 1px solid $color-whisper;
 
-  @media (min-width: $tablet-width) {
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
+  }
+
+  @media (min-width: $vp-768) {
     display: grid;
     max-width: 668px;
 
@@ -28,10 +41,9 @@
     "manufacturing__order";
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     display: grid;
     max-width: 1050px;
-    padding-bottom: 105px;
 
     grid-template-areas: "player-container tittle"
     "player-container manufacturing__order";
@@ -40,6 +52,8 @@
 }
 
 .manufacturing__title {
+  position: relative;
+
   margin: 0;
   padding: 22px 13px 27px 91px;
 
@@ -50,14 +64,39 @@
 
   grid-area: tittle;
 
-  @media (min-width: $tablet-width) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/video.svg");
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $vp-768) {
     font-size: 20px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 96px;
+    padding-left: 60px;
+
+    &::before {
+      top: 30px;
+      left: 58px;
+
+      transform: translateY(0);
+    }
   }
 }
 
 .manufacturing__descriprion {
   margin: 0;
-  padding: 35px 0 41px 0;
+  padding: 0 0 41px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -65,7 +104,7 @@
   line-height: 24px;
   color: $color-charcoal;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 15px;
     line-height: 30px;
   }
@@ -76,12 +115,12 @@
 
   grid-area: manufacturing__order;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     padding: 0 42px 46px 42px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 47px 36px 60px 80px;
+  @media (min-width: $vp-1150) {
+    padding: 0 36px 60px 80px;
   }
 }
 
@@ -93,39 +132,58 @@
   font-size: 18px;
   line-height: 16px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     max-width: 584px;
 
     font-size: 17px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     max-width: 230px;
   }
 }
 
 
 .manufacturing__player-container {
+  position: relative;
+
   grid-area: player-container;
 }
 
 .manufacturing__player-button {
   position: absolute;
-  top: 126px;
+  top: 50%;
   left: 50%;
 
-  transform: translateX(-50%);
+  width: 100px;
+  height: 77px;
+  padding: 0;
 
-  @media (min-width: $desktop-width) {
-    top: 205px;
-    left: 33%;
-  }
-}
+  background-color: transparent;
+  border: none;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
 
-.manufacturing__image {
-  @media (min-width: $tablet-width) {
-    display: block;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 100%;
     height: 100%;
+
+    background-image: url("../img/play.svg");
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.3;
   }
 }
+
