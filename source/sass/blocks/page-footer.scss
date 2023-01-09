@@ -108,6 +108,10 @@
 
   gap: 27px;
 
+  .footer__logo-htmlacademy {
+    fill: $color-downy;
+  }
+
   &:hover svg {
     fill: $color-puerto-rico-mod;
   }
