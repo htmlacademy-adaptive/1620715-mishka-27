@@ -1,17 +1,17 @@
 .catalog__list {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 30px 30px 0;
 
   list-style: none;
 
   @media (min-width: $vp-768) {
-    padding: 67px 50px 0 50px;
+    padding: 70px 50px 0 50px;
   }
 
   @media (min-width: $vp-1150) {
     display: grid;
     max-width: 1150px;
-    padding: 0 50px;
+    padding: 122px 50px 0;
 
     gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -83,11 +83,13 @@
     width: 100%;
     min-width: 334px;
     margin-bottom: 0;
+    padding: 26px 32px 0 32px;
   }
 
   @media (min-width: $vp-1150) {
     width: 100%;
     min-width: 316px;
+    padding-left: 27px;
   }
 }
 
@@ -95,12 +97,16 @@
   padding-bottom: 17px;
 
   border-bottom: 1px solid $color-whisper;
+  &--big {
+    padding-bottom: 16px;
+  }
 
   @media (min-width: $vp-768) {
-    padding-bottom: 170px;
+    padding-bottom: 173px;
 
     &--big {
       padding-bottom: 140px;
+      margin-bottom: 11px;
     }
   }
 
@@ -118,6 +124,12 @@
 
   padding-top: 22px;
   padding-bottom: 25px;
+
+  @media (min-width: $vp-1150) {
+    &--big {
+      padding-top: 13px;
+    }
+  }
 }
 
 .catalog-item__link {
@@ -136,6 +148,10 @@
 
   @media (min-width: $vp-768) {
     font-size: 20px;
+
+    &--big {
+      padding-right: 35px;
+    }
   }
 }
 
@@ -167,21 +183,23 @@
 }
 
 .catalog-item__button {
-  opacity: 0.2;
   position: absolute;
   left: 90%;
-  cursor: pointer;
 
   background-color: inherit;
   border: none;
+  cursor: pointer;
+  opacity: 0.2;
 
   &:hover {
     opacity: 1;
+
     fill: $color-downy;
   }
 
   &:focus {
     opacity: 1;
+
     fill: $color-downy;
   }
 

@@ -1,6 +1,4 @@
 .intro {
-  margin-bottom: 17px;
-
   background-color: $color-white-smoke;
 
 
@@ -10,7 +8,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 97%;
+      top: 89%;
 
       display: block;
       width: 100%;
@@ -18,7 +16,16 @@
 
       background-image: url("../img/zigzag-intro.svg");
       background-position-x: center;
-      background-size: auto 22.8px;
+      background-size: auto 23.8px;
+    }
+
+    @media (min-width: $vp-1150) {
+      &::after {
+        background-image: url("../img/zigzag-fill-desktop.svg");
+        top: 90%;
+        background-size: auto 33.8px;
+      }
+
     }
   }
 }
@@ -27,20 +34,22 @@
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  padding: 74px 0;
+  padding: 73px 0;
 
   @media (min-width: $vp-768) {
     max-width: 768px;
-    margin-bottom: 54px;
+    padding: 58px 0 82px;
   }
 
   @media (min-width: $vp-1150) {
     max-width: 1150px;
-    margin-bottom: 98px;
+    padding-bottom: 101px;
   }
 }
 
 .intro__tittle {
+  margin: 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: 27px;

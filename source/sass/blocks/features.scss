@@ -58,19 +58,23 @@
   &--ecology::after {
     content: "";
     position: absolute;
-    top: -65px;
-    left: 7px;
+    top: -53px;
+    left: 8px;
 
     width: 33px;
     height: 38px;
 
     background-image: url("../img/ecology.svg");
+
+    @media (min-width: $vp-768) {
+      top: -58px;
+    }
   }
 
   &--prise::after {
     content: "";
     position: absolute;
-    top: -65px;
+    top: -52px;
     left: 0;
 
     width: 47px;
@@ -82,7 +86,7 @@
   &--like::after {
     content: "";
     position: absolute;
-    top: -65px;
+    top: -48px;
     left: 7px;
 
     width: 34px;
@@ -94,8 +98,8 @@
   &--natural::after {
     content: "";
     position: absolute;
-    top: -65px;
-    left: 0;
+    top: -50px;
+    left: 3px;
 
     width: 35px;
     height: 34px;
@@ -106,8 +110,8 @@
   &--support::after {
     content: "";
     position: absolute;
-    top: -65px;
-    left: -7px;
+    top: -50px;
+    left: -6px;
 
     width: 55px;
     height: 23px;
@@ -118,8 +122,8 @@
   &--package::after {
     content: "";
     position: absolute;
-    top: -65px;
-    left: 0;
+    top: -51px;
+    left: 3px;
 
     width: 33px;
     height: 32px;
@@ -147,6 +151,7 @@
 
     &--like {
       order: 5;
+      margin-bottom: 0;
     }
 
     &--natural {
@@ -168,7 +173,7 @@
   padding: 0 30px;
 
   @media (min-width: $vp-768) {
-    padding: 0 50px;
+    padding: 25px 50px 0;
   }
 
   @media (min-width: $vp-1150) {

@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
-
     <header class="header">
       <div class="container">
         <nav class="header__nav header__nav--no-js">
           <div class="header__logo-wrapper">
             <a class="header__logo" href="#">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-mishka-desktop.svg" width="149" height="72">
-                <source media="(min-width: 768px)" srcset="img/logo-mishka-tablet.svg" width="113" height="46">
-                <img src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип сайта 'Мишка'.">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="img/logo-mishka-desktop.svg"
+                  width="149"
+                  height="72"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/logo-mishka-tablet.svg"
+                  width="113"
+                  height="46"
+                />
+                <img
+                  src="img/logo-mishka-mobile.svg"
+                  width="86"
+                  height="35"
+                  alt="Логотип сайта 'Мишка'."
+                />
               </picture>
             </a>
           </div>
@@ -31,15 +45,22 @@
           <div class="header__nav-wrapper">
             <ul class="header__site-nav">
               <li class="header__site-nav-item">
-                <a class="header__site-nav-link" href="catalog.html">Каталог товаров</a>
+                <a class="header__site-nav-link" href="catalog.html"
+                  >Каталог товаров</a
+                >
               </li>
               <li class="header__site-nav-item">
-                <a class="header__site-nav-link" href="form.html">Вязание на заказ</a>
+                <a class="header__site-nav-link" href="form.html"
+                  >Вязание на заказ</a
+                >
               </li>
             </ul>
             <ul class="header__user-nav">
               <li class="header__user-nav-item">
-                <a class="header__user-nav-link header__user-nav-link--find-icon" href="#">
+                <a
+                  class="header__user-nav-link header__user-nav-link--find-icon"
+                  href="#"
+                >
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -49,13 +70,16 @@
                     fill="$color-default-black"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use href="./img/sprite/sprite.svg#search"/>
+                    <use href="./img/sprite/sprite.svg#search" />
                   </svg>
                   <span class="header__user-nav-find-text">Поиск по сайту</span>
                 </a>
               </li>
               <li class="header__user-nav-item">
-                <a class="header__user-nav-link header__user-nav-link--cart-icon" href="#">
+                <a
+                  class="header__user-nav-link header__user-nav-link--cart-icon"
+                  href="#"
+                >
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -66,7 +90,7 @@
                     opacity="0.2"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                  <use href="./img/sprite/sprite.svg#cart"/>
+                    <use href="./img/sprite/sprite.svg#cart" />
                   </svg>
                   Корзина: пока пуста
                 </a>
@@ -74,7 +98,9 @@
             </ul>
             <ul class="header__new-sale-nav">
               <li class="header__new-sale-nav-item">
-                <a class="header__new-sale-nav-link" href="#">Новые поступления</a>
+                <a class="header__new-sale-nav-link" href="#"
+                  >Новые поступления</a
+                >
               </li>
               <li class="header__new-sale-nav-item">
                 <a class="header__new-sale-nav-link" href="#">Распродажа</a>
@@ -135,23 +161,72 @@
                 <dd class="stock__info-value">15 см</dd>
               </div>
             </dl>
+
             <div class="stock__picture-wrapper">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-images-desktop@1x.webp 1x, img/triple-set-images-desktop@2x.webp 2x" width="525" height="636">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-images-tablet@1x.webp 1x, img/triple-set-images-tablet@2x.webp 2x" width="334" height="404">
-                <source type="image/webp" srcset="img/triple-set-images-mobile@1x.webp 1x, img/triple-set-images-mobile@2x.webp 2x" width="260" height="315">
-                <source media="(min-width: 1150px)" srcset="img/triple-set-images-desktop@1x.jpg 1x, img/triple-set-images-desktop@2x.jpg 2x" width="525" height="636">
-                <source media="(min-width: 768px)" srcset="img/triple-set-images-tablet@1x.jpg 1x, img/triple-set-images-tablet@2x.jpg 2x" width="334" height="404">
-                <img class="stock__picture" src="img/triple-set-images-mobile@1x.jpg" srcset="img/triple-set-images-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки.">
+                <source
+                  type="image/webp"
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/triple-set-images-desktop@1x.webp 1x,
+                    img/triple-set-images-desktop@2x.webp 2x
+                  "
+                  width="525"
+                  height="636"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/triple-set-images-tablet@1x.webp 1x,
+                    img/triple-set-images-tablet@2x.webp 2x
+                  "
+                  width="334"
+                  height="404"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/triple-set-images-mobile@1x.webp 1x,
+                    img/triple-set-images-mobile@2x.webp 2x
+                  "
+                  width="260"
+                  height="315"
+                />
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/triple-set-images-desktop@1x.jpg 1x,
+                    img/triple-set-images-desktop@2x.jpg 2x
+                  "
+                  width="525"
+                  height="636"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/triple-set-images-tablet@1x.jpg 1x,
+                    img/triple-set-images-tablet@2x.jpg 2x
+                  "
+                  width="334"
+                  height="404"
+                />
+                <img
+                  class="stock__picture"
+                  src="img/triple-set-images-mobile@1x.jpg"
+                  srcset="img/triple-set-images-mobile@2x.jpg 2x"
+                  width="260"
+                  height="315"
+                  alt="Вязаные корзинки."
+                />
               </picture>
             </div>
-            <div class="stock__order-wrapper">
-              <span class="stock__price">Цена: 990 руб.</span>
-              <a class="stock__button button modal__button" href="#"
-                >Заказать</a
-              >
-            </div>
-          </dl>
+
+          <div class="stock__order-wrapper">
+            <span class="stock__price">Цена: 990 руб.</span>
+            <a class="stock__button button modal__button" href="#">Заказать</a>
+          </div>
+        </div>
         </div>
       </section>
       <section class="features">
@@ -184,8 +259,14 @@
         <div class="container">
           <div class="reviews__wrapper">
             <h2 class="reviews__title">Отзывы</h2>
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у<br>популярных инстамамочек.
-              В<br>отчаянии, я накупила аксессуаров и игрушек в Мишке, и<br>мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко
+              такого количества лайков, как <br />
+              у популярных инстамамочек. <br />
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br />
+              и мои фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
             <cite class="reviews__author-info">
               <span class="reviews__author-name">Анастасия Красильникова</span>
               <span class="reviews__author-mail">@misssssiskras</span>
@@ -194,7 +275,10 @@
               <button class="reviews__slider-button" type="button">
                 <span class="visually-hidden">Предыдущий отзыв.</span>
               </button>
-              <button class="reviews__slider-button reviews__slider-button--next" type="button">
+              <button
+                class="reviews__slider-button reviews__slider-button--next"
+                type="button"
+              >
                 <span class="visually-hidden">Следующий отзыв.</span>
               </button>
             </div>
@@ -225,12 +309,46 @@
         </div>
         <div class="contacts__map-wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" width="527" height="457">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="457">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x" width="320" height="454">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" width="527" height="457">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="457">
-            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="454" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101." title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            <source
+              type="image/webp"
+              media="(min-width: 1150px)"
+              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
+              width="527"
+              height="457"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
+              width="768"
+              height="457"
+            />
+            <source
+              type="image/webp"
+              srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x"
+              width="320"
+              height="454"
+            />
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x"
+              width="527"
+              height="457"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x"
+              width="768"
+              height="457"
+            />
+            <img
+              src="img/map-mobile@1x.jpg"
+              srcset="img/map-mobile@2x.jpg 2x"
+              width="320"
+              height="454"
+              alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101."
+              title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
+            />
           </picture>
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
@@ -247,7 +365,7 @@
               fill="$color-default-black"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <use href="./img/sprite/sprite.svg#footer-logo"/>
+              <use href="./img/sprite/sprite.svg#footer-logo" />
             </svg>
             <span class="visually-hidden">Логотип сайта 'Мишка'.</span>
           </a>
@@ -263,7 +381,7 @@
                   fill="#$color-aubergine"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#vkontakte-icon"/>
+                  <use href="./img/sprite/sprite.svg#vkontakte-icon" />
                 </svg>
                 <span class="visually-hidden">Мы во Вконтакте.</span>
               </a>
@@ -279,7 +397,7 @@
                   fill="$color-aubergine"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#youtube-icon"/>
+                  <use href="./img/sprite/sprite.svg#youtube-icon" />
                 </svg>
                 <span class="visually-hidden">Мы на Youtube.</span>
               </a>
@@ -295,7 +413,7 @@
                   fill="$color-aubergine"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#telegram-icon"/>
+                  <use href="./img/sprite/sprite.svg#telegram-icon" />
                 </svg>
                 <span class="visually-hidden">Мы в Telegram.</span>
               </a>
@@ -306,7 +424,8 @@
             href="https://htmlacademy.ru/intensive/adaptive"
           >
             Разработано
-            <svg class="footer__logo-htmlacademy"
+            <svg
+              class="footer__logo-htmlacademy"
               aria-hidden="true"
               focusable="false"
               width="27"
@@ -315,7 +434,7 @@
               fill="$color-downy"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <use href="./img/sprite/sprite.svg#logo-htmlacademy"/>
+              <use href="./img/sprite/sprite.svg#logo-htmlacademy" />
             </svg>
             <span class="visually-hidden"
               >Лендинг интенсива "HTML и CSS. Адаптивная вёрстка и

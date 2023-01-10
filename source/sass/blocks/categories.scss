@@ -23,13 +23,11 @@
 
       background-image: url("../img/zigzag-fill-tablet.svg");
       background-position-x: center;
-      background-size: auto 22.8px;
+      background-size: auto 23.8px;
     }
   }
 
   @media (min-width: $vp-1150) {
-    margin-bottom: 115px;
-
     &::after {
       height: 34px;
 
@@ -51,11 +49,11 @@
   }
 
   @media (min-width: $vp-768) {
-    padding-top: 94px;
-    padding-bottom: 135px;
+    padding-top: 38px;
+    padding-bottom: 251px;
 
     background-image: url("../img/index-intro-tablet@1x.jpg");
-    background-position: 50% -60px;
+    background-position: 50% -45px;
     background-size: 768px 746px;
 
     @media (min-resolution: 2dppx) {
@@ -65,11 +63,11 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 94px;
-    padding-bottom: 135px;
+    padding-top: 40px;
+    padding-bottom: 235px;
 
     background-image: url("../img/index-intro-desktop@1x.jpg");
-    background-position: 50% -60px;
+    background-position: 50% -45px;
     background-size: 1150px 746px;
 
     @media (min-resolution: 2dppx) {
@@ -178,6 +176,10 @@
 
     background-image: url("../img/interior.svg");
     opacity: 0.5;
+
+    @media (min-width: $vp-768) {
+      top: 29px;
+    }
   }
 
   &--toy::after {
@@ -191,12 +193,24 @@
 
     background-image: url("../img/toy.svg");
     opacity: 0.5;
+
+    @media (min-width: $vp-768) {
+      top: 32px;
+      right: 34px;
+    }
   }
 
   @media (min-width: $vp-768) {
     max-width: 668px;
+    min-height: 129px;
+    padding-left: 37px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $vp-1150) {
+    min-height: 122px;
+    padding-right: 310px;
   }
 }
