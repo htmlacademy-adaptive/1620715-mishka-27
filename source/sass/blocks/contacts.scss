@@ -2,10 +2,15 @@
   @media (min-width: $vp-1150) {
     position: relative;
 
-    max-width: 1150px;
+    display: grid;
+    max-width: 1050px;
     margin: 0 auto;
-    margin-bottom: 105px;
-    padding-top: 39px;
+    margin-bottom: 48px;
+    padding-left: 30px;
+
+    column-gap: 15px;
+
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -26,9 +31,10 @@
   }
 
   @media (min-width: $vp-1150) {
+    margin-bottom: 35px;
+
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 35px;
   }
 }
 
@@ -93,19 +99,29 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
+
+  max-width: 320px;
   margin: 0 auto;
   margin-bottom: 39px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url("../img/map-pin.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-50%) translateY(-50%);
+  }
 
   @media (min-width: $vp-768) {
     max-width: 768px;
     margin-bottom: 52px;
-  }
-
-
-  @media (min-width: $vp-1150) {
-    position: absolute;
-    top: -40px;
-    right: 49px;
   }
 }
 
@@ -114,14 +130,16 @@
   margin-bottom: 40px;
 
   @media (min-width: $vp-768) {
-    font-size: 17px;
-    margin-bottom: 58px;
     max-width: 225px;
+    margin-bottom: 58px;
+
+    font-size: 17px;
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0;
-    margin-left: 225px;
+    position: absolute;
+    top: 407px;
+    left: 178px;
   }
 }
 
@@ -135,7 +153,6 @@
   @media (min-width: $vp-1150) {
     display: flex;
     flex-direction: column;
-    padding-right: 460px;
     margin-bottom: 84px;
   }
 }
@@ -169,13 +186,13 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 0 50px 0 144px;
+    padding: 77px 0 0 144px;
 
 
     &::after {
       content: "";
       position: absolute;
-      top: -17px;
+      top: 61px;
       left: 33px;
 
       width: 47px;

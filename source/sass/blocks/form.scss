@@ -6,7 +6,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 117px;
+    padding-top: 110px;
+    padding-bottom: 55px;
   }
 }
 
@@ -79,8 +80,8 @@
     @media (min-width: $vp-768) {
       margin-bottom: 50px;
 
-      grid-template-rows: min-content 1fr;
       grid-template-columns: 170px auto;
+      grid-template-rows: min-content 1fr;
     }
 
     @media (min-width: $vp-1150) {
@@ -221,18 +222,6 @@
 
       @media (min-width: $vp-1150) {
         width: 700px;
-      }
-    }
-
-    .form__input-text {
-      padding-right: 45px;
-
-      @media (min-width: $vp-768) {
-        padding-right: 65px;
-      }
-
-      @media (min-width: $vp-1150) {
-        padding-right: 45px;
       }
     }
 
@@ -614,7 +603,6 @@
   opacity: 0.2;
 
   pointer-events: none;
-
   fill: $color-default-black;
 }
 

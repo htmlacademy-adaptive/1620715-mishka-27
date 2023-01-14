@@ -189,21 +189,20 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
-  opacity: 0.2;
 
-  &:hover {
+  &:hover svg {
     opacity: 1;
 
     fill: $color-downy;
   }
 
-  &:focus {
+  &:focus svg {
     opacity: 1;
 
     fill: $color-downy;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
   }
 }
