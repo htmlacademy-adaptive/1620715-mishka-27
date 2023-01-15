@@ -48,12 +48,16 @@
 .features__item {
   position: relative;
 
-  margin-bottom: 83px;
+  margin-bottom: 81px;
 
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--ecology::after {
     content: "";
@@ -64,7 +68,7 @@
     width: 33px;
     height: 38px;
 
-    background-image: url("../img/ecology.svg");
+    background-image: url("../img/icons/index/ecology.svg");
 
     @media (min-width: $vp-768) {
       top: -58px;
@@ -80,7 +84,7 @@
     width: 47px;
     height: 27px;
 
-    background-image: url("../img/prise.svg");
+    background-image: url("../img/icons/index/prise.svg");
   }
 
   &--like::after {
@@ -92,7 +96,7 @@
     width: 34px;
     height: 27px;
 
-    background-image: url("../img/like.svg");
+    background-image: url("../img/icons/index/like.svg");
   }
 
   &--natural::after {
@@ -104,7 +108,7 @@
     width: 35px;
     height: 34px;
 
-    background-image: url("../img/natural.svg");
+    background-image: url("../img/icons/index/natural.svg");
   }
 
   &--support::after {
@@ -116,7 +120,7 @@
     width: 55px;
     height: 23px;
 
-    background-image: url("../img/support.svg");
+    background-image: url("../img/icons/index/support.svg");
   }
 
   &--package::after {
@@ -128,12 +132,9 @@
     width: 33px;
     height: 32px;
 
-    background-image: url("../img/package.svg");
+    background-image: url("../img/icons/index/package.svg");
   }
 
-  &:last-child {
-    margin-bottom: 58px;
-  }
 
   @media (min-width: $vp-768) {
     margin-bottom: 110px;
@@ -171,6 +172,7 @@
 
 .featutes__container {
   padding: 0 30px;
+  margin-bottom: 58px;
 
   @media (min-width: $vp-768) {
     padding: 25px 50px 0;

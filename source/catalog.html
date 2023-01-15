@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
     <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/opensans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensansbold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png" />
@@ -22,18 +32,18 @@
               <picture>
                 <source
                   media="(min-width: 1150px)"
-                  srcset="img/logo-mishka-desktop.svg"
+                  srcset="img/icons/header/logo-mishka-desktop.svg"
                   width="149"
                   height="72"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/logo-mishka-tablet.svg"
+                  srcset="img/icons/header/logo-mishka-tablet.svg"
                   width="113"
                   height="46"
                 />
                 <img
-                  src="img/logo-mishka-mobile.svg"
+                  src="img/icons/header/logo-mishka-mobile.svg"
                   width="86"
                   height="35"
                   alt="Логотип сайта 'Мишка'."
@@ -68,7 +78,6 @@
                     focusable="false"
                     width="18"
                     height="18"
-                    opacity="0.2"
                     viewBox="0 0 18 18"
                     fill="$color-default-black"
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +99,6 @@
                     height="18"
                     viewBox="0 0 21 18"
                     fill="$color-default-black"
-                    opacity="0.2"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <use href="./img/sprite/sprite.svg#cart" />
@@ -129,8 +137,8 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-bunny-desktop@1x.webp 1x,
-                    img/product-bunny-desktop@2x.webp 2x
+                    img/content/product/product-bunny-desktop@1x.webp 1x,
+                    img/content/product/product-bunny-desktop@2x.webp 2x
                   "
                   width="316"
                   height="462"
@@ -139,8 +147,8 @@
                   type="image/webp"
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-bunny-tablet@1x.webp 1x,
-                    img/product-bunny-tablet@2x.webp 2x
+                    img/content/product/product-bunny-tablet@1x.webp 1x,
+                    img/content/product/product-bunny-tablet@2x.webp 2x
                   "
                   width="334"
                   height="334"
@@ -148,8 +156,8 @@
                 <source
                   type="image/webp"
                   srcset="
-                    img/product-bunny-mobile@1x.webp,
-                    img/product-bunny-mobile@2x.webp 2x
+                    img/content/product/product-bunny-mobile@1x.webp,
+                    img/content/product/product-bunny-mobile@2x.webp 2x
                   "
                   width="260"
                   height="195"
@@ -158,8 +166,8 @@
                 <source
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-bunny-desktop@1x.jpg 1x,
-                    img/product-bunny-desktop@2x.jpg 2x
+                    img/content/product/product-bunny-desktop@1x.jpg 1x,
+                    img/content/product/product-bunny-desktop@2x.jpg 2x
                   "
                   width="316"
                   height="462"
@@ -167,16 +175,16 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-bunny-tablet@1x.jpg 1x,
-                    img/product-bunny-tablet@2x.jpg 2x
+                    img/content/product/product-bunny-tablet@1x.jpg 1x,
+                    img/content/product/product-bunny-tablet@2x.jpg 2x
                   "
                   width="334"
                   height="334"
                 />
                 <img
                   class="catalog__item-image"
-                  src="img/product-bunny-mobile@1x.jpg"
-                  srcset="img/product-bunny-mobile@2x.jpg 2x"
+                  src="img/content/product/product-bunny-mobile@1x.jpg"
+                  srcset="img/content/product/product-bunny-mobile@2x.jpg 2x"
                   width="260"
                   height="195"
                   alt="Вязанная игрушка в виде зайца."
@@ -192,10 +200,7 @@
               </div>
               <div class="catalog-item__footer">
                 <span class="catalog-item__price">1 200 руб.</span>
-                <a
-                  class="catalog-item__button modal__button"
-                  type="submit"
-                >
+                <a class="catalog-item__button modal__button" href="#">
                   <span class="visually-hidden">Добавить в корзину.</span>
                   <svg
                     aria-hidden="true"
@@ -204,7 +209,6 @@
                     height="18"
                     viewBox="0 0 21 18"
                     fill="$color-default-black"
-                    opacity="0.2"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <use href="./img/sprite/sprite.svg#cart" />
@@ -220,8 +224,8 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-basket-desktop@1x.webp 1x,
-                    img/product-basket-desktop@2x.webp 2x
+                    img/content/product/product-basket-desktop@1x.webp 1x,
+                    img/content/product/product-basket-desktop@2x.webp 2x
                   "
                   width="316"
                   height="462"
@@ -230,8 +234,8 @@
                   type="image/webp"
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-basket-tablet@1x.webp 1x,
-                    img/product-basket-tablet@2x.webp 2x
+                    img/content/product/product-basket-tablet@1x.webp 1x,
+                    img/content/product/product-basket-tablet@2x.webp 2x
                   "
                   width="334"
                   height="334"
@@ -240,8 +244,8 @@
                 <source
                   type="image/webp"
                   srcset="
-                    img/product-basket-mobile@1x.webp 1x,
-                    img/product-basket-mobile@2x.webp 2x
+                    img/content/product/product-basket-mobile@1x.webp 1x,
+                    img/content/product/product-basket-mobile@2x.webp 2x
                   "
                   width="260"
                   height="195"
@@ -250,8 +254,8 @@
                 <source
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-basket-desktop@1x.jpg 1x,
-                    img/product-basket-desktop@2x.jpg 2x
+                    img/content/product/product-basket-desktop@1x.jpg 1x,
+                    img/content/product/product-basket-desktop@2x.jpg 2x
                   "
                   width="316"
                   height="462"
@@ -259,16 +263,16 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-basket-tablet@1x.jpg 1x,
-                    img/product-basket-tablet@2x.jpg 2x
+                    img/content/product/product-basket-tablet@1x.jpg 1x,
+                    img/content/product/product-basket-tablet@2x.jpg 2x
                   "
                   width="334"
                   height="334"
                 />
                 <img
                   class="catalog__item-image"
-                  src="img/product-basket-mobile@1x.jpg"
-                  srcset="img/product-basket-mobile@2x.jpg 2x"
+                  src="img/content/product/product-basket-mobile@1x.jpg"
+                  srcset="img/content/product/product-basket-mobile@2x.jpg 2x"
                   width="260"
                   height="195"
                   alt="Вязанная корзинка."
@@ -286,10 +290,7 @@
               </div>
               <div class="catalog-item__footer">
                 <span class="catalog-item__price">690 руб.</span>
-                <a
-                  class="catalog-item__button modal__button"
-                  type="submit"
-                >
+                <a class="catalog-item__button modal__button" href="#">
                   <span class="visually-hidden">Добавить в корзину.</span>
                   <svg
                     aria-hidden="true"
@@ -298,7 +299,6 @@
                     height="18"
                     viewBox="0 0 21 18"
                     fill="$color-default-black"
-                    opacity="0.2"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <use href="./img/sprite/sprite.svg#cart" />
@@ -314,8 +314,8 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-big-basket-desktop@1x.webp 1x,
-                    img/product-big-basket-desktop@2x.webp 2x
+                    img/content/product/product-big-basket-desktop@1x.webp 1x,
+                    img/content/product/product-big-basket-desktop@2x.webp 2x
                   "
                   width="316"
                   height="462"
@@ -324,8 +324,8 @@
                   type="image/webp"
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-big-basket-tablet@1x.webp 1x,
-                    img/product-big-basket-tablet@2x.webp 2x
+                    img/content/product/product-big-basket-tablet@1x.webp 1x,
+                    img/content/product/product-big-basket-tablet@2x.webp 2x
                   "
                   width="334"
                   height="334"
@@ -334,8 +334,8 @@
                 <source
                   type="image/webp"
                   srcset="
-                    img/product-big-basket-mobile@1x.webp 1x,
-                    img/product-big-basket-mobile@2x.webp 2x
+                    img/content/product/product-big-basket-mobile@1x.webp 1x,
+                    img/content/product/product-big-basket-mobile@2x.webp 2x
                   "
                   width="260"
                   height="195"
@@ -344,8 +344,8 @@
                 <source
                   media="(min-width: 1150px)"
                   srcset="
-                    img/product-big-basket-desktop@1x.jpg 1x,
-                    img/product-big-basket-desktop@2x.jpg 2x
+                    img/content/product/product-big-basket-desktop@1x.jpg 1x,
+                    img/content/product/product-big-basket-desktop@2x.jpg 2x
                   "
                   width="316"
                   height="462"
@@ -353,16 +353,18 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/product-big-basket-tablet@1x.jpg 1x,
-                    img/product-big-basket-tablet@2x.jpg 2x
+                    img/content/product/product-big-basket-tablet@1x.jpg 1x,
+                    img/content/product/product-big-basket-tablet@2x.jpg 2x
                   "
                   width="334"
                   height="334"
                 />
                 <img
                   class="catalog__item-image"
-                  src="img/product-big-basket-mobile@1x.jpg"
-                  srcset="img/product-big-basket-mobile@2x.jpg 2x"
+                  src="img/content/product/product-big-basket-mobile@1x.jpg"
+                  srcset="
+                    img/content/product/product-big-basket-mobile@2x.jpg 2x
+                  "
                   width="260"
                   height="195"
                   alt="Вязанная корзинка, полная игрушек."
@@ -382,10 +384,7 @@
               </div>
               <div class="catalog-item__footer catalog-item__footer--big">
                 <span class="catalog-item__price">1500 руб.</span>
-                <a
-                  class="catalog-item__button"
-                  type="submit"
-                >
+                <a class="catalog-item__button modal__button" href="#">
                   <span class="visually-hidden">Добавить в корзину.</span>
                   <svg
                     aria-hidden="true"
@@ -394,7 +393,6 @@
                     height="18"
                     viewBox="0 0 21 18"
                     fill="$color-default-black"
-                    opacity="0.2"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <use href="./img/sprite/sprite.svg#cart" />
@@ -414,8 +412,8 @@
                 type="image/webp"
                 media="(min-width: 1150px)"
                 srcset="
-                  img/manufacturing-desktop@1x.webp 1x,
-                  img/manufacturing-desktop@2x.webp 2x
+                  img/content/manufacturing/manufacturing-desktop@1x.webp 1x,
+                  img/content/manufacturing/manufacturing-desktop@2x.webp 2x
                 "
                 width="683"
                 height="455"
@@ -424,8 +422,8 @@
                 type="image/webp"
                 media="(min-width: 768px)"
                 srcset="
-                  img/manufacturing-tablet@1x.webp 1x,
-                  img/manufacturing-tablet@2x.webp 2x
+                  img/content/manufacturing/manufacturing-tablet@1x.webp 1x,
+                  img/content/manufacturing/manufacturing-tablet@2x.webp 2x
                 "
                 width="668"
                 height="455"
@@ -434,8 +432,8 @@
               <source
                 type="image/webp"
                 srcset="
-                  img/manufacturing-mobile@1x.jpg 1x,
-                  img/manufacturing-mobile@2x.jpg 2x
+                  img/content/manufacturing/manufacturing-mobile@1x.jpg 1x,
+                  img/content/manufacturing/manufacturing-mobile@2x.jpg 2x
                 "
                 width="260"
                 height="150"
@@ -444,8 +442,8 @@
               <source
                 media="(min-width: 1150px)"
                 srcset="
-                  img/manufacturing-desktop@1x.jpg 1x,
-                  img/manufacturing-desktop@2x.jpg 2x
+                  img/content/manufacturing/manufacturing-desktop@1x.jpg 1x,
+                  img/content/manufacturing/manufacturing-desktop@2x.jpg 2x
                 "
                 width="683"
                 height="455"
@@ -453,16 +451,18 @@
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  img/manufacturing-tablet@1x.jpg 1x,
-                  img/manufacturing-tablet@2x.jpg 2x
+                  img/content/manufacturing/manufacturing-tablet@1x.jpg 1x,
+                  img/content/manufacturing/manufacturing-tablet@2x.jpg 2x
                 "
                 width="668"
                 height="455"
               />
               <img
                 class="manufacturing__video-preview"
-                src="img/manufacturing-mobile@1x.jpg"
-                srcset="img/manufacturing-mobile@2x.jpg 2x"
+                src="img/content/manufacturing/manufacturing-mobile@1x.jpg"
+                srcset="
+                  img/content/manufacturing/manufacturing-mobile@2x.jpg 2x
+                "
                 width="260"
                 height="150"
                 alt="Вязаные корзинки."
@@ -492,7 +492,7 @@
               fill="$color-default-black"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <use href="./img/sprite/sprite.svg#logo-footer" />
+              <use href="./img/sprite/sprite.svg#logo-footer" />
             </svg>
             <span class="visually-hidden">Логотип сайта 'Мишка'.</span>
           </a>
@@ -508,7 +508,7 @@
                   fill="#231F20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#social-vk" />
+                  <use href="./img/sprite/sprite.svg#social-vk" />
                 </svg>
                 <span class="visually-hidden">Мы во Вконтакте.</span>
               </a>
@@ -524,7 +524,7 @@
                   fill="#231F20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#social-youtube" />
+                  <use href="./img/sprite/sprite.svg#social-youtube" />
                 </svg>
                 <span class="visually-hidden">Мы на Youtube.</span>
               </a>
@@ -540,7 +540,7 @@
                   fill="#231F20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                <use href="./img/sprite/sprite.svg#social-telegram" />
+                  <use href="./img/sprite/sprite.svg#social-telegram" />
                 </svg>
                 <span class="visually-hidden">Мы в Telegram.</span>
               </a>
@@ -560,7 +560,7 @@
               fill="#63D1BB"
               xmlns="http://www.w3.org/2000/svg"
             >
-            <use href="./img/sprite/sprite.svg#htmlacademy" />
+              <use href="./img/sprite/sprite.svg#htmlacademy" />
             </svg>
             <span class="visually-hidden"
               >Лендинг интенсива "HTML и CSS. Адаптивная вёрстка и
@@ -572,7 +572,7 @@
     </footer>
     <div class="modal-container">
       <div class="modal-window">
-        <h2 class="modal-window__title">Добавить в <br />корзину</h2>
+        <h2 class="modal-window__title">Добавить в корзину</h2>
         <span class="modal-window__text">Выберите размер:</span>
         <form
           class="modal-window__form"
@@ -630,7 +630,7 @@
         </form>
       </div>
     </div>
-    <script src="js/navigation-mobile.js"></script>
-    <script src="js/modal-window.js"></script>
+    <script src="js/navigation-mobile.min.js"></script>
+    <script src="js/modal-window.min.js"></script>
   </body>
 </html>

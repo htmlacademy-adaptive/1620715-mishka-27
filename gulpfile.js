@@ -63,9 +63,9 @@ const createWebP = () => {
 }
 
 const optimizeSVG = () => {
-  return  gulp.src('source/img/icons/*.svg')
+  return  gulp.src('source/img/icons/**/*.svg')
     .pipe(svgmin())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/icons'));
 }
 
 const sprite = () => {
@@ -81,8 +81,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    'source/*.ico',
-    'source/*site.webmanifest'
+    'source/favicon.ico',
+    'source/manifest.webmanifest'
   ], {
     base: 'source'
   })

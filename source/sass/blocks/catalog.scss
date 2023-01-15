@@ -185,11 +185,15 @@
 
 .catalog-item__button {
   position: absolute;
-  left: 90%;
+  left: 92%;
 
   background-color: inherit;
   border: none;
   cursor: pointer;
+
+  & svg {
+    opacity: 0.3;
+  }
 
   &:hover svg {
     opacity: 1;
