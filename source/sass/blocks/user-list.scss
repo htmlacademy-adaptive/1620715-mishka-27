@@ -3,7 +3,7 @@
 }
 
 .user-list__search-description {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: none;
   }
 }

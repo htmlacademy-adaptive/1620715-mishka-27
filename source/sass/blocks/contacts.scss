@@ -1,29 +1,38 @@
 .contacts {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     position: relative;
 
-    max-width: 1150px;
+    display: grid;
+    max-width: 1050px;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-bottom: 48px;
+    padding-left: 30px;
+
+    column-gap: 15px;
+
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .contacts__title {
   margin: 0;
+  margin-bottom: 27px;
 
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 
-  @media (min-width: $tablet-width) {
-    margin: 150px 0 49px 0;
+  @media (min-width: $vp-768) {
+    margin-bottom: 49px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
+    margin-bottom: 35px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -40,86 +49,182 @@
   font-size: 14px;
   line-height: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     font-size: 17px;
+  }
+}
+
+.contacts__address-street {
+  @media (min-width: $vp-768) {
+    padding-right: 60px;
   }
 }
 
 .contacts__email,
 .contacts__address {
-  margin-right: 35px;
+  margin-right: 34px;
+
+  @media (min-width: $vp-768) {
+    margin-right: 24px;
+  }
 }
 
 .contacts__container {
   display: flex;
+
   &--email {
-    margin-bottom: 50px;
-  }
-  &--address {
-    margin-bottom: 62px;
+    margin-bottom: 30px;
   }
 }
 
 .contacts__email-link {
+  max-height: 28px;
+
   color: $color-charcoal;
   text-decoration: none;
 
   border-bottom: 1px solid $color-downy-mod;
+
+  &:hover {
+    color: $color-puerto-rico-mod;
+  }
+
+  &:active {
+    border-color: rgba($color-downy-mod, 0.1);
+  }
+
+  @media (min-width: $vp-1150) {
+    max-height: 35px;
+  }
 }
 
 .contacts__map-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 42px;
+  position: relative;
 
-  @media (min-width: $desktop-width) {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  &::before {
+    content: "";
     position: absolute;
-    top: -50px;
-    right: 100px;
+    top: 42%;
+    left: 54%;
+    z-index: 1;
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url("../img/icons/index/map-pin.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media (min-width: $vp-768) {
+    max-width: 768px;
+    margin-bottom: 52px;
+
+    &::before {
+      top: 41%;
+      left: 52%;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    &::before {
+      top: 43%;
+      left: 50%;
+    }
+  }
+}
+
+.contacts__iframe {
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 454px;
+
+  border: none;
+
+  @media (min-width: $vp-768) {
+    height: 457px;
+  }
+
+  @media (min-width: $vp-1150) {
+    left: -115px;
+
+    width: 527px;
   }
 }
 
 .contacts__button {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
+    max-width: 225px;
+    margin-bottom: 58px;
+
     font-size: 17px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-left: 350px;
+  @media (min-width: $vp-1150) {
+    position: absolute;
+    top: 407px;
+    left: 178px;
   }
 }
 
 .contacts__wrapper {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 
-    gap: 25px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1150) {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    margin-bottom: 84px;
   }
 }
 
 .contacts__inner {
-  @media (min-width: $mobile-width) {
+  padding: 40px 30px 58px;
+
+  @media (min-width: $vp-321) {
     max-width: 600px;
     margin: 0 auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
+    position: relative;
+
     max-width: 990px;
     margin: 0 auto;
+    padding: 66px 50px 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      right: 53px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icons/index/flag.svg");
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 50px 0 175px;
+  @media (min-width: $vp-1150) {
+    padding: 80px 0 0 144px;
+
+
+    &::after {
+      top: 61px;
+      left: 33px;
+    }
   }
 }
