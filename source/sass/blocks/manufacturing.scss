@@ -19,7 +19,6 @@
 .manufacturing__inner {
   position: relative;
 
-  min-width: 260px;
   max-width: 260px;
   margin: 0 auto;
 
@@ -138,12 +137,12 @@
 
 .manufacturing__button {
   width: 100%;
+  padding: 16px;
 
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
-  padding: 16px;
 
   @media (min-width: $vp-768) {
     max-width: 584px;

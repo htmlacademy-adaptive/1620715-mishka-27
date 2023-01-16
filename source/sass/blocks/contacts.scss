@@ -72,6 +72,7 @@
 .contacts__container {
   display: flex;
 
+
   &--email {
     margin-bottom: 30px;
   }
@@ -130,7 +131,7 @@
     }
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1150) {
     &::before {
       top: 43%;
       left: 50%;

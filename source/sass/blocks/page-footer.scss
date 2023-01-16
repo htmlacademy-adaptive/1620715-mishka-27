@@ -1,7 +1,13 @@
+
 .footer {
   min-height: 160px;
 
   background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    min-height: 143px;
+    padding: 51px 50px 58px;
+  }
 
   @media (min-width: $vp-768) {
     min-height: 143px;
@@ -25,7 +31,6 @@
 
     background-color: $color-whisper-mod;
   }
-
 
   @media (min-width: $vp-768) {
     display: flex;

@@ -55,6 +55,78 @@
   font-size: 17px;
   line-height: 20px;
 
+  &--ecology::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 7px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/ecology.svg");
+  }
+
+  &--prise::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/prise.svg");
+  }
+
+  &--like::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/like.svg");
+  }
+
+  &--natural::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/natural.svg");
+  }
+
+  &--support::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -7px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/support.svg");
+  }
+
+  &--package::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 0;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/package.svg");
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -169,10 +241,9 @@
   }
 }
 
-
 .featutes__container {
-  padding: 0 30px;
   margin-bottom: 58px;
+  padding: 0 30px;
 
   @media (min-width: $vp-768) {
     padding: 25px 50px 0;
