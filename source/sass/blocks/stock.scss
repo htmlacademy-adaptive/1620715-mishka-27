@@ -1,14 +1,15 @@
 .stock {
   margin-bottom: 31px;
-  padding: 0 30px 36px;
+  padding: 30px 30px 42px;
 
   @media (min-width: $vp-768) {
-    padding: 40px 50px 69px;
+    padding: 42px 50px 34px;
   }
 
   @media (min-width: $vp-1150) {
     margin: 0 auto;
-    padding: 54px 50px 96px 175px;
+    margin-bottom: 68px;
+    padding: 68px 0 71px 175px;
   }
 }
 
@@ -27,6 +28,7 @@
 
 .stock__wrapper {
   position: relative;
+
   @media (min-width: $vp-768) {
     display: grid;
 
@@ -62,7 +64,8 @@
   @media (min-width: $vp-1150) {
     z-index: 1;
 
-    margin: 61px 0 35px 0;
+    margin-bottom: 9px;
+    padding-top: 61px;
 
     font-size: 53px;
     line-height: 57px;
@@ -94,8 +97,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    top: calc(61px + 57px/2);
-    left: -143px;
+    top: calc(61px + 50px/2);
+    left: -129px;
 
     margin: 0;
 
@@ -104,35 +107,36 @@
 }
 
 .stock__description {
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 
   font-size: 15px;
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 48px;
+    margin-bottom: 11px;
 
     font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 0 60px;
+    margin: 0 0 38px;
   }
 }
 
 .stock__info-list {
   display: flex;
   flex-direction: column;
-  margin: 0 0 41px;
+  margin: 0 0 38px;
 
-  gap: 22px;
+  gap: 20px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 70px;
+    margin: 0 0 33px;
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 0 124px;
+    margin: 0 0 100px;
   }
 }
 
@@ -146,7 +150,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -16px;
+    bottom: -10px;
 
     width: 100%;
     height: 1px;
@@ -170,12 +174,18 @@
 }
 
 .stock__picture-wrapper {
+  margin-bottom: 24px;
+
   @media (min-width: $vp-768) {
+    padding: 12px 0;
+
     grid-column: 2/-1;
     grid-row: 2/-1;
   }
 
   @media (min-width: $vp-1150) {
+    padding: 0;
+
     grid-column: 2/-1;
     grid-row: 1/-1;
   }
@@ -185,7 +195,6 @@
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
 
   object-fit: contain;
 
@@ -206,12 +215,6 @@
     margin-bottom: 33px;
 
     font-size: 20px;
-  }
-}
-
-.stock__order-wrapper {
-  @media (min-width: $vp-768) {
-    margin-top: auto;
   }
 }
 

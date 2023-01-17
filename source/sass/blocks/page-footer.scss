@@ -1,7 +1,13 @@
+
 .footer {
   min-height: 160px;
 
   background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    min-height: 143px;
+    padding: 51px 50px 58px;
+  }
 
   @media (min-width: $vp-768) {
     min-height: 143px;
@@ -26,11 +32,11 @@
     background-color: $color-whisper-mod;
   }
 
-
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     &::after {
       display: none;
@@ -66,7 +72,7 @@
 
   list-style: none;
 
-  gap: 11.15%;
+  gap: 8.15%;
 
   @media (min-width: $vp-768) {
     justify-content: space-between;
@@ -79,6 +85,7 @@
 .footer__socials-item {
   display: flex;
   align-items: center;
+  margin-right: 11px;
 }
 
 .footer__socials-link {
@@ -107,6 +114,10 @@
   text-decoration: none;
 
   gap: 27px;
+
+  .footer__logo-htmlacademy {
+    fill: $color-downy;
+  }
 
   &:hover svg {
     fill: $color-puerto-rico-mod;

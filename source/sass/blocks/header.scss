@@ -57,7 +57,7 @@
     width: 21px;
     height: 20px;
 
-    background-image: url("../img/nav-toggle-close.svg");
+    background-image: url("../img/icons/header/nav-toggle-close.svg");
   }
 
   @media (max-width: $vp-768) {
@@ -114,7 +114,7 @@
   @media (min-width: $vp-768) {
     position: absolute;
     top: 22px;
-    left: 50px;
+    left: 48px;
 
     padding: 0;
 
@@ -139,7 +139,7 @@
   height: 14px;
 
   background: transparent;
-  background-image: url("../img/nav-toggle-open.svg");
+  background-image: url("../img/icons/header/nav-toggle-open.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -220,6 +220,7 @@
 
 .header__site-nav-item:not(:first-child) .header__site-nav-link {
   position: relative;
+
   @media (min-width: $vp-1150) {
     &::before {
       content: "";
@@ -284,6 +285,11 @@
   text-decoration: none;
 
   box-shadow: 0 1px 0 $color-whisper, inset 0 1px 0 $color-whisper;
+
+  & svg {
+    opacity: 0.2;
+  }
+
 
   &:hover {
     color: rgba($color-default-black, 0.6);

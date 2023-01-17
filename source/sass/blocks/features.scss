@@ -48,7 +48,7 @@
 .features__item {
   position: relative;
 
-  margin-bottom: 83px;
+  margin-bottom: 81px;
 
   font-style: normal;
   font-weight: 700;
@@ -128,8 +128,85 @@
   }
 
   &:last-child {
-    margin-bottom: 58px;
+    margin-bottom: 0;
   }
+
+  &--ecology::after {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 8px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/icons/index/ecology.svg");
+
+    @media (min-width: $vp-768) {
+      top: -58px;
+    }
+  }
+
+  &--prise::after {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icons/index/prise.svg");
+  }
+
+  &--like::after {
+    content: "";
+    position: absolute;
+    top: -48px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icons/index/like.svg");
+  }
+
+  &--natural::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 3px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icons/index/natural.svg");
+  }
+
+  &--support::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -6px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icons/index/support.svg");
+  }
+
+  &--package::after {
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icons/index/package.svg");
+  }
+
 
   @media (min-width: $vp-768) {
     margin-bottom: 110px;
@@ -147,6 +224,7 @@
 
     &--like {
       order: 5;
+      margin-bottom: 0;
     }
 
     &--natural {
@@ -163,12 +241,12 @@
   }
 }
 
-
 .featutes__container {
+  margin-bottom: 58px;
   padding: 0 30px;
 
   @media (min-width: $vp-768) {
-    padding: 0 50px;
+    padding: 25px 50px 0;
   }
 
   @media (min-width: $vp-1150) {

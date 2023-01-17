@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    padding-top: 2px;
     padding-bottom: 105px;
 
     font-size: 50px;
@@ -18,7 +19,6 @@
 .manufacturing__inner {
   position: relative;
 
-  min-width: 260px;
   max-width: 260px;
   margin: 0 auto;
 
@@ -55,7 +55,7 @@
   position: relative;
 
   margin: 0;
-  padding: 22px 13px 27px 91px;
+  padding: 20px 13px 27px 91px;
 
   font-style: normal;
   font-weight: 700;
@@ -68,26 +68,31 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 32px;
 
     width: 32px;
     height: 22px;
 
-    background-image: url("../img/video.svg");
+    background-image: url("../img/icons/catalog/video.svg");
     transform: translateY(-50%);
   }
 
   @media (min-width: $vp-768) {
+    padding: 38px 13px 27px 106px;
+
     font-size: 20px;
+
+    &::before {
+      left: 41px;
+    }
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 96px;
-    padding-left: 60px;
+    padding: 96px 70px 0 80px;
 
     &::before {
-      top: 30px;
-      left: 58px;
+      top: 46px;
+      left: 79px;
 
       transform: translateY(0);
     }
@@ -95,8 +100,8 @@
 }
 
 .manufacturing__descriprion {
-  margin: 0;
-  padding: 0 0 41px 0;
+  margin: 0 0 45px;
+  padding: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -105,13 +110,19 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 40px;
+
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-bottom: 55px;
   }
 }
 
 .manufacturing__order {
-  padding: 13px 30px 34px;
+  padding: 32px 32px 31px;
 
   grid-area: manufacturing__order;
 
@@ -120,12 +131,13 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 0 36px 60px 80px;
+    padding: 0 36px 38px 80px;
   }
 }
 
 .manufacturing__button {
   width: 100%;
+  padding: 16px;
 
   font-style: normal;
   font-weight: 700;
@@ -173,7 +185,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("../img/play.svg");
+    background-image: url("../img/icons/catalog/play.svg");
     transform: translateX(-50%) translateY(-50%);
   }
 
@@ -184,28 +196,5 @@
   &:active {
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     opacity: 0.3;
-  }
-}
-
-.manufacturing__image {
-  @media (min-width: $vp-768) {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.manufacturing__video {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-
-  @media (min-width: $vp-768) {
-    top: 59%;
-  }
-
-  @media (min-width: $vp-1150) {
-    top: 5%;
-    left: 70%;
   }
 }

@@ -14,6 +14,7 @@ const closeModal = () => {
 
 document.addEventListener('click', (evt) => {
   if (evt.target.closest('.modal__button')) {
+    evt.preventDefault();
     openModal();
   }
 });

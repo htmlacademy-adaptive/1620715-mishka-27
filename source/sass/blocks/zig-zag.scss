@@ -1,11 +1,15 @@
 .zig-zag {
   max-width: 1050px;
 
-  background-image: url("../img/zigzag-line-mobile.svg");
+  background-image: url("../img/icons/zig-zag/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
-    background-image: url("../img/zigzag-line-tablet.svg");
+    background-image: url("../img/icons/zig-zag/zigzag-line-tablet.svg");
+  }
+
+  @media (min-width: $vp-1150) {
+    background-image: url("../img/icons/zig-zag/zigzag-line-desktop.svg");
   }
 }
