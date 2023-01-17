@@ -37,12 +37,13 @@
 }
 
 .categories__container {
+  padding: 73px 30px 115px;
+
   background-color: $color-snow;
   background-image: url("../img/background/index-intro-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
   background-size: 320px 373px;
-  padding: 73px 30px 115px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/index-intro-mobile@2x.jpg");
@@ -55,8 +56,8 @@
 
     background-image: url("../img/background/index-intro-tablet@1x.jpg");
     background-position: 50% -45px;
-    background-size: 768px auto;
     background-position-y: -45px;
+    background-size: 768px auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/index-intro-tablet@2x.jpg");
@@ -150,7 +151,43 @@
   }
 
   @media (min-width: $vp-768) {
-    width: 50%;
+    position: relative;
+
+    background-color: $color-downy;
+
+    &:nth-child(even) {
+      background-color: $color-puerto-rico;
+
+      & .categories__link:hover {
+        background-color: $color-puerto-rico-mod;
+        transform: translateY(-5px);
+      }
+
+      & .categories__link:hover::after {
+        opacity: 0.7;
+      }
+
+      & .categories__link:active::after {
+        opacity: 0.3;
+      }
+    }
+
+    & .categories__link:hover {
+      background-color: $color-downy-alter;
+      transform: translateY(-5px);
+    }
+
+    & .categories__link:hover::after {
+      opacity: 0.7;
+    }
+
+    & .categories__link:active::after {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $vp-768) {
+      width: 50%;
+    }
   }
 }
 
