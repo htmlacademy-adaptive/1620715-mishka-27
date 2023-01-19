@@ -13,7 +13,7 @@ const closeModal = () => {
 }
 
 document.addEventListener('click', (evt) => {
-  if (evt.target.closest('.modal__button')) {
+  if (evt.target.closest('.modal-button')) {
     evt.preventDefault();
     openModal();
   }

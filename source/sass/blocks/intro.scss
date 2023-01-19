@@ -1,7 +1,6 @@
 .intro {
   background-color: $color-white-smoke;
 
-
   @media (min-width: $vp-768) {
     position: relative;
 
@@ -14,7 +13,7 @@
       width: 100%;
       height: 24px;
 
-      background-image: url("../img/icons/zig-zag/zigzag-intro.svg");
+      background-image: url("../img/icons/zigzag-intro.svg");
       background-position-x: center;
       background-size: auto 23.8px;
     }
@@ -23,7 +22,7 @@
       &::after {
         top: 90%;
 
-        background-image: url("../img/icons/zig-zag/zigzag-fill-desktop.svg");
+        background-image: url("../img/icons/zigzag-fill-desktop.svg");
         background-size: auto 33.8px;
       }
     }

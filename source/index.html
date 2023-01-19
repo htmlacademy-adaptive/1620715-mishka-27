@@ -32,18 +32,18 @@
               <picture>
                 <source
                   media="(min-width: 1150px)"
-                  srcset="img/icons/header/logo-mishka-desktop.svg"
+                  srcset="img/icons/logo-mishka-desktop.svg"
                   width="149"
                   height="72"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/icons/header/logo-mishka-tablet.svg"
+                  srcset="img/icons/logo-mishka-tablet.svg"
                   width="113"
                   height="46"
                 />
                 <img
-                  src="img/icons/header/logo-mishka-mobile.svg"
+                  src="img/icons/logo-mishka-mobile.svg"
                   width="86"
                   height="35"
                   alt="Логотип сайта 'Мишка'."
@@ -72,6 +72,7 @@
                 <a
                   class="header__user-nav-link header__user-nav-link--find-icon"
                   href="#"
+                  aria-label="Поиск по сайту."
                 >
                   <svg
                     aria-hidden="true"
@@ -123,7 +124,7 @@
       </div>
     </header>
 
-    <main class="main__container main">
+    <main>
       <h1 class="visually-hidden">
         Сайт магазина товаров ручной работы Mishka.
       </h1>
@@ -138,12 +139,12 @@
           <ul class="categories__list">
             <li class="categories__item categories__item">
               <a class="categories__link categories__link--interior" href="#"
-                >Предметы интерьера</a
+                >Предметы <br />интерьера</a
               >
             </li>
             <li class="categories__item categories__item">
               <a class="categories__link categories__link--toy" href="#"
-                >Детские игрушки</a
+                >Детские <br />игрушки</a
               >
             </li>
           </ul>
@@ -237,15 +238,13 @@
 
             <div class="stock__order-wrapper">
               <span class="stock__price">Цена: 990 руб.</span>
-              <a class="stock__button button modal__button" href="#"
-                >Заказать</a
-              >
+              <a class="stock__button button modal-button" href="#">Заказать</a>
             </div>
           </div>
         </div>
       </section>
       <section class="features">
-        <div class="featutes__container container">
+        <div class="features__container container">
           <h2 class="features__tittle">Коротко о нас:</h2>
           <ul class="features__list">
             <li class="features__item features__item--ecology">
@@ -302,93 +301,83 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__inner container">
+        <div class="contacts__container">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__wrapper">
-            <div class="contacts__container contacts__container--email">
-              <h3 class="contacts__email">e-mail:</h3>
-              <a
-                class="contacts__email-link"
-                href="mailto:info@mimimishkashop.ru"
-                >info@mimimishkashop.ru</a
-              >
-            </div>
-            <div class="contacts__container contacts__container--address">
-              <h3 class="contacts__address">адрес:</h3>
-              <p class="contacts__address-street">
-                г. Санкт-Петербург,<br />
-                ул. Большая Конюшенная, д. 19/8, офис 101
-              </p>
-            </div>
+          <ul class="contacts__company">
+            <li class="contacts__item">
+              <span class="contacts__name">e-mail:</span>
+              <a class="contacts__description contacts__description--underline" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__name">адрес:</span>
+              <span class="contacts__description">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</span>
+            </li>
+          </ul>
+        </div>
+          <div class="contacts__map">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1150px)"
+                srcset="
+                  img/content/maps/map-desktop@1x.webp 1x,
+                  img/content/maps/map-desktop@2x.webp 2x
+                "
+                width="527"
+                height="457"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/maps/map-tablet@1x.webp 1x,
+                  img/content/maps/map-tablet@2x.webp 2x
+                "
+                width="768"
+                height="457"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/content/maps/map-mobile@1x.webp,
+                  img/content/maps/map-mobile@2x.webp 2x
+                "
+                width="320"
+                height="454"
+              />
+              <source
+                media="(min-width: 1150px)"
+                srcset="
+                  img/content/maps/map-desktop@1x.jpg 1x,
+                  img/content/maps/map-desktop@2x.jpg 2x
+                "
+                width="527"
+                height="457"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/content/maps/map-tablet@1x.jpg 1x,
+                  img/content/maps/map-tablet@2x.jpg 2x
+                "
+                width="768"
+                height="457"
+              />
+              <img class="contacts__image"
+                src="img/content/maps/map-mobile@1x.jpg"
+                srcset="img/content/maps/map-mobile@2x.jpg 2x"
+                width="320"
+                height="454"
+                alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101."
+                title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
+              />
+              </picture>
+            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1671551866483!5m2!1sru!2sru" width="320" height="454" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  title="Адрес магазина г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101."></iframe>
           </div>
-        </div>
-        <div class="contacts__map-wrapper">
-          <iframe
-            class="contacts__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1671551866483!5m2!1sru!2sru"
-            width="600"
-            height="450"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <source
-            type="image/webp"
-            media="(min-width: 1150px)"
-            srcset="
-              img/content/maps/map-desktop@1x.webp 1x,
-              img/map-desktop@2x.webp              2x
-            "
-            width="527"
-            height="457"
-          />
-          <source
-            type="image/webp"
-            media="(min-width: 768px)"
-            srcset="
-              img/content/maps/map-tablet@1x.webp 1x,
-              img/map-tablet@2x.webp              2x
-            "
-            width="768"
-            height="457"
-          />
-          <source
-            type="image/webp"
-            srcset="
-              img/content/maps/map-mobile@1x.webp,
-              img/map-mobile@2x.webp              2x
-            "
-            width="320"
-            height="454"
-          />
-          <source
-            media="(min-width: 1150px)"
-            srcset="
-              img/content/maps/map-desktop@1x.jpg 1x,
-              img/map-desktop@2x.jpg              2x
-            "
-            width="527"
-            height="457"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              img/content/maps/map-tablet@1x.jpg 1x,
-              img/map-tablet@2x.jpg              2x
-            "
-            width="768"
-            height="457"
-          />
-          <img
-            src="img/content/maps/map-mobile@1x.jpg"
-            srcset="img/content/maps/map-mobile@2x.jpg 2x"
-            width="320"
-            height="454"
-            alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101."
-            title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
-          />
-        </div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
-      </section>
+          <div class="contacts__wrapper">
+            <a class="contacts__button button" href="#">Напишите нам</a>
+          </div>
+        </section>
     </main>
 
     <footer class="footer">
