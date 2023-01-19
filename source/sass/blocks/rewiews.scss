@@ -1,21 +1,21 @@
 .reviews {
   padding: 1px 30px 51px 30px;
 
-  background-image: url("../img/icons/zig-zag/zigzag-line-mobile.svg");
+  background-image: url("../img/icons/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @media (min-width: $vp-768) {
     padding: 86px 50px 138px;
 
-    background-image: url("../img/icons/zig-zag/zigzag-line-tablet.svg");
+    background-image: url("../img/icons/zigzag-line-tablet.svg");
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 50px 71px 50px;
-    padding: 145px 0 190px 174px;
+    margin: 0 50px;
+    padding: 142px 0 190px 174px;
 
-    background-image: url("../img/icons/zig-zag/zigzag-line-desktop.svg");
+    background-image: url("../img/icons/zigzag-line-desktop.svg");
   }
 }
 
@@ -29,7 +29,7 @@
     grid-template-areas: "title . write-button"
     "text text text"
     "author . slider-buttons";
-    grid-template-columns: max-content 1fr 0.73fr;
+    grid-template-columns: 2fr 1fr 0.73fr;
 
     &::before {
       content: "";
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    grid-template-columns: max-content 1fr 0.38fr;
+    grid-template-columns: 1fr 1fr 0.38fr;
 
     &::before {
       top: -54px;
@@ -87,7 +87,7 @@
 }
 
 .reviews__text {
-  margin: 0 0 30px;
+  margin: 0 0 32px;
 
   font-size: 15px;
   line-height: 30px;
@@ -155,7 +155,7 @@
 .reviews__slider-buttons {
   display: flex;
   max-width: 400px;
-  margin: 0 auto 38px;
+  margin: 0 auto 41px;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -184,7 +184,7 @@
     width: 50px;
     height: 26px;
 
-    background-image: url("../img/icons/index/arrow-left.svg");
+    background-image: url("../img/icons/arrow-left.svg");
     transform: translateX(-50%) translateY(-50%);
   }
 

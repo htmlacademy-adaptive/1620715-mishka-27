@@ -107,7 +107,7 @@
 }
 
 .stock__description {
-  margin: 0 0 24px;
+  margin: 0 0 28px;
 
   font-size: 15px;
   color: $color-charcoal;
@@ -127,7 +127,7 @@
 .stock__info-list {
   display: flex;
   flex-direction: column;
-  margin: 0 0 38px;
+  margin: 0 0 45px;
 
   gap: 20px;
 
@@ -145,7 +145,8 @@
 
   display: grid;
 
-  grid-template-columns: 98px auto;
+  grid-template-columns: 93px auto;
+  gap: 5px;
 
   &::after {
     content: "";

@@ -57,7 +57,7 @@
     width: 21px;
     height: 20px;
 
-    background-image: url("../img/icons/header/nav-toggle-close.svg");
+    background-image: url("../img/icons/nav-toggle-close.svg");
   }
 
   @media (max-width: $vp-768) {
@@ -139,7 +139,7 @@
   height: 14px;
 
   background: transparent;
-  background-image: url("../img/icons/header/nav-toggle-open.svg");
+  background-image: url("../img/icons/nav-toggle-open.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
