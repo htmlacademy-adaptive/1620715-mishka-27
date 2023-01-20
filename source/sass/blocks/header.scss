@@ -60,19 +60,19 @@
     background-image: url("../img/icons/nav-toggle-close.svg");
   }
 
+  &--nojs .header__nav-wrapper {
+    position: static;
+
+    display: block;
+  }
+
+  &--nojs .header__nav-toggle {
+    display: none;
+  }
+
   @media (max-width: $vp-768) {
     max-width: 768px;
     margin: 0 auto;
-
-    &--nojs .header__nav-wrapper {
-      position: static;
-
-      display: block;
-    }
-
-    &--nojs .header__nav-toggle {
-      display: none;
-    }
   }
 
   @media (min-width: $vp-768) {

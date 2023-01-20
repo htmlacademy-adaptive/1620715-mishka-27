@@ -12,21 +12,21 @@ const closeModal = () => {
   modalContainer.removeEventListener("click", onModalClick);
 }
 
-document.addEventListener('click', (evt) => {
-  if (evt.target.closest('.modal-button')) {
+document.addEventListener("click", (evt) => {
+  if (evt.target.closest(".modal-button")) {
     evt.preventDefault();
     openModal();
   }
 });
 
 const onDocumentKeydown = (evt) => {
-  if(evt.key === 'Escape') {
+  if(evt.key === "Escape") {
     closeModal();
   }
 };
 
 const onModalClick = (evt) => {
-  if(!evt.target.closest('modal-window')) {
+  if(!evt.target.closest("modal-window")) {
     closeModal();
   }
 };
