@@ -60,13 +60,13 @@
     background-image: url("../img/icons/nav-toggle-close.svg");
   }
 
-  &--nojs .header__nav-wrapper {
+  &--no-js .header__nav-wrapper {
     position: static;
 
     display: block;
   }
 
-  &--nojs .header__nav-toggle {
+  &--no-js .header__nav-toggle {
     display: none;
   }
 
